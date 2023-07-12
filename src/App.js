@@ -4,6 +4,7 @@ import Home from './Home';
 import About from './About';
 import Experience from './Experience';
 import Projects from './Projects';
+import Footer from './Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -20,6 +21,7 @@ function App() {
       
        
     </Routes>
+    <Footer/>
     
   </BrowserRouter>
   );

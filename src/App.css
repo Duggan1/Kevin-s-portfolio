@@ -86,6 +86,30 @@ html {
             background-repeat: no-repeat;
             background-size: contain;
             }
-          
+.exsect3 {
+  text-align: center;
+  color:orange;
+  
+
+}   
+.exsectP {
+  margin: 0 20% 0 5%;
+}         
+.proA {
+  display: inline-block;
+  vertical-align: middle;
+  /* margin-bottom:'150px'; */
+  font-size: 16px;
+  font-weight:bold;
+  
+  
+}
+.foot {
+  border-top: 4px white solid;
+  padding-top: 13px;
+  background-color: black;
+  padding-bottom: 5%;
+  margin-bottom: -7%;
+}
         
       
