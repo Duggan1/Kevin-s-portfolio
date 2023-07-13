@@ -59,12 +59,13 @@ html {
     background-size: cover;
     }
 .ye {
-      max-width: 1000px;
-      min-width: 1000px;
+      max-width: 80%;
+      min-width: 80%;
+      
       height: auto;
       background-image: url("./ye.jpeg");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size:cover;
       }
 #resume {
         max-width: 100px;
@@ -98,6 +99,8 @@ html {
 }   
 .exsectP {
   margin: 0 20% 0 5%;
+  line-height: 2.5;
+  font-weight: bolder;
 }         
 .proA {
   display: inline-block;
@@ -114,6 +117,7 @@ html {
   background-color: black;
   padding-bottom: 5%;
   margin-bottom: -7%;
+  
 }
 .custom-checkbox {
   width: 340px;

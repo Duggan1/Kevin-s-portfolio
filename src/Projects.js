@@ -7,7 +7,7 @@ function Projects() {
       <h2 className="exsect3">TECHNICAL SKILLS</h2>
       <p className="exsectP" style={{ fontWeight: 'bolder', paddingBottom:'100px' }}>Flask, Python, SQLalchemy, SQL, JavaScript, React, CSS, HTML, Restful API, Git, Stripe, Redux, JSON</p>
 
-      <div className="exsect3" style={{color:'darkred'}} >
+      <div className="exsect3" style={{color:'red'}} >
         <h3 className="proA" style={{ marginBottom: '175px', marginRight: '5px', marginLeft: '-120px', fontSize: '30px' }}>
           Chicago Fight Team -
         </h3>
@@ -27,7 +27,7 @@ function Projects() {
 
       <div className="exsectP" style={{ marginTop: '-90px', paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>Developed a functional website allowing users to sign-up and pay for memberships for CFT’s two different gym locations.</p>
-        <ul>
+        <ul >
           <li>
             Implemented bcrypt to ensure secure handling of user information during the sign-up process, enabling users to purchase one of the membership options using Stripe checkout.
           </li>
