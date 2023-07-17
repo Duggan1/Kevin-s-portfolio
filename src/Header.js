@@ -14,17 +14,6 @@ function Header() {
                     >
                         Home
                     </NavLink>
-                    
-                    <NavLink
-                        exact to="/about"
-                        className="hbl"
-                        
-                        activeStyle={{
-                            background: "white",}}
-                        
-                    >
-                        About Kevin 
-                    </NavLink>
                    
                     <NavLink
                         exact to="/projects"
@@ -45,6 +34,16 @@ function Header() {
                         
                     >
                         Experience
+                    </NavLink>
+                    <NavLink
+                        exact to="/about"
+                        className="hbl"
+                        
+                        activeStyle={{
+                            background: "white",}}
+                        
+                    >
+                        About Kevin 
                     </NavLink>
                    
 
