@@ -13,10 +13,10 @@ function Experience() {
 
     return (
       <div>
+        <div style={{backgroundColor:'black'}}>
+        <h2 className="exsect3 bigGuy">Experience</h2></div>
         
-        <h2 style={{ fontWeight: 'bolder',fontSize:'90px',textAlign:'center',backgroundColor:'black',paddingTop:'10%',marginTop:'-7%',paddingBottom:'2%' }}className="exsect3">Experience</h2>
-        
-        <p className="exsectP"> As a Full Stack Web Developer with a passion for problem-solving and a diverse background in teaching, management, sales, and sustainable design, my journey as a software engineer has been an exciting and fulfilling one. I'll take you through my experiences, projects, and the skills I've gained along the way, showcasing how my unique perspective and dedication have propelled me in the world of coding.</p>
+        <p className="exsectP "> As a Full Stack Web Developer with a passion for problem-solving and a diverse background in teaching, management, sales, and sustainable design, my journey as a software engineer has been an exciting and fulfilling one. I'll take you through my experiences, projects, and the skills I've gained along the way, showcasing how my unique perspective and dedication have propelled me in the world of coding.</p>
 
 <h3 className="exsect3">Finding my Path</h3>
 <p className="exsectP">My journey into the world of software engineering began with a desire to combine my love for technology with my knack for teaching. While working as an English Tutor at EnGoo, I had the opportunity to evaluate students' progress and tailor lessons to their unique learning styles. It was during this time that I realized the power of technology in facilitating effective learning. Eager to explore this further, I embarked on a path that would lead me to become a software engineer.</p>

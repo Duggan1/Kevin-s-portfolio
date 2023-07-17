@@ -3,8 +3,8 @@
 function About() {
     return (
         <>
-      <div>
-      <h1 className='exsect3 bigGuy' >About Kevin</h1>
+      <div style={{backgroundColor:'black'}}>
+      <h1 className='exsect3 bigGuy font-size-60px' >About Kevin</h1>
         {/* <h2 className='exsect3' style={{color:'white'}}></h2> */}
         
       </div>

@@ -183,7 +183,7 @@ html {
 
 }
 .icon1 {
-  height: 90px;
+  min-height: 90px;
   width: 90px;
   background-color: black;
   margin-left: 32%;
@@ -233,8 +233,13 @@ html {
 
 
 @media (max-width: 767px) {
-  .exsect3 {
+  .font-size-60px {
     font-size: 60px;
+  }
+  .font-size-55px {
+    font-size: 50px;
+  }
+  .exsect3 {
     padding-top: 20px;
     margin-top: -3%;
     padding-bottom: 1%;
@@ -242,7 +247,7 @@ html {
     padding-right: 10%;
   }
   .akavid {
-    width: 410px;
+    width: 75%;
     height: 400px;
     margin-left: 1%;
 
@@ -251,18 +256,36 @@ html {
     padding-bottom: 10%;
   }
   .footH {
-    font-size: 31px;
+    font-size: 25px;
   }
   .icon1 {
     margin-left: 15%;
+    min-height: 65px;
     
+    
+  }
+  #resume {
+    max-width: 65px;
+    min-width: 65px;
+  }
+  #linkedin {
+    max-width: 65px;
+    min-width: 65px;
+  }
+  #github {
+    max-width: 65px;
+    min-width: 65px;
+  }
+  .wttc {
+    font-size: 20px;
   }
 
   .exsectP {
-    margin: 0 10% 0 5%;
-    line-height: 1.5;
-    margin-right: 15%;
+    margin: 0 0% 0 2%;
+    line-height: 2.5;
+    margin-right: 22%;
   }
+        
   .juan {
     margin-right: 15%;
   }
@@ -281,7 +304,7 @@ html {
 
   }
   .upUp {
-    margin-top: -200px;
+    margin-top: -220px;
   }
 
   iframe {

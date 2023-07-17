@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
     <div style={{backgroundColor:'black'}}>
-    <h1 className='exsect3 bigGuy'>Kevin Duggan</h1></div>
+    <h1 className='exsect3 bigGuy font-size-55px'>Kevin Duggan</h1></div>
     <h1 className='juan' style={{textAlign:'center'}}>Kevin Thomas Duggan</h1>
     <div style={{display: 'flex', justifyContent: 'center'}}>
       <div style={{ height: '200px',display: 'flex', justifyContent: 'center'}}className="kevo"></div>
