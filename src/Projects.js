@@ -13,11 +13,11 @@ function Projects() {
          - Chicago Fight Team -
         </h3>
         <div   >
-        <a className="proA" style={{color:'white',cursor: 'pointer' }} href="https://github.com/Duggan1/Project5-Project-cft">Github</a>
+        <a className="proA" style={{color:'blue',cursor: 'pointer' }} href="https://github.com/Duggan1/Project5-Project-cft">Github</a>
         <p style={{ display: 'inline-block', marginBottom: '20px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'white',cursor: 'pointer' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
+        <a className="proA" style={{color:'blue',cursor: 'pointer' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
         <p style={{ display: 'inline-block', marginBottom: '20px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'white',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
+        <a className="proA" style={{color:'blue',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
         </div></div><div className="textC juan"><iframe
           src="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac"
           frameBorder="0"
@@ -46,11 +46,11 @@ function Projects() {
         <h3 className="proT" >
           - KRT -
         </h3>
-        <a className="proA" style={{ }} href="https://github.com/Duggan1/p4-project-krt">Github</a>
+        <a className="proA" style={{color:'blue',cursor: 'pointer' }} href="https://github.com/Duggan1/p4-project-krt">Github</a>
         <p style={{ display: 'inline-block', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{ }} href="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0">Demo</a>
+        <a className="proA" style={{color:'blue',cursor: 'pointer' }} href="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0">Demo</a>
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{  }}  href="https://krt-kitchen.onrender.com/">KRT-Kitchen</a>
+        <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://krt-kitchen.onrender.com/">KRT-Kitchen</a>
         </div><div className="textC juan"><iframe
           src="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0"
           frameBorder="0"
@@ -73,9 +73,9 @@ function Projects() {
         <h3 className="proT">
           - Recipe Box -
         </h3>
-        <a className="proA" style={{ }} href="https://github.com/Duggan1/phase-2-project-Recipe-Box">Github</a>
+        <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://github.com/Duggan1/phase-2-project-Recipe-Box">Github</a>
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{ }} href="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69">Demo</a>
+        <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69">Demo</a>
         </div><div className="textC juan"><iframe
           src="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69"
           frameBorder="0"
