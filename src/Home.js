@@ -9,14 +9,15 @@ function Home() {
 
   return (
     <>
-    <h1 className='exsect3' style={{ fontWeight: 'bolder',fontSize:'90px',textAlign:'center',backgroundColor:'black',paddingTop:'10%',marginTop:'-7%',paddingBottom:'2%' }}>Kevin Duggan</h1>
-    <h1 style={{textAlign:'center'}}>Kevin Thomas Duggan</h1>
+    <div style={{backgroundColor:'black'}}>
+    <h1 className='exsect3 bigGuy'>Kevin Duggan</h1></div>
+    <h1 className='juan' style={{textAlign:'center'}}>Kevin Thomas Duggan</h1>
     <div style={{display: 'flex', justifyContent: 'center'}}>
       <div style={{ height: '200px',display: 'flex', justifyContent: 'center'}}className="kevo"></div>
       <div style={{ height: '200px',display: 'flex', justifyContent: 'center'}} className="kevio"></div></div>
       <div style={{ textAlign: 'center' }}>
         
-        <h2>Computer Software Engineer</h2>
+        <h2 className='juan'>Computer Software Engineer</h2>
         
         <div style={{ display: 'inline-block'}}className="custom-checkbox">
           <input
@@ -40,11 +41,12 @@ function Home() {
             frameBorder="0"
             allowFullScreen
             title="kevin"
+            
             style={{ borderRadius: '25%', width: '710px', height: '400px', border: 'orange 5px solid', marginTop:'5%' }}
           ></iframe>
         )}
 
-        <h4 style={{fontWeight:'bolder'}}>Introduce Myself ?</h4>
+        <h4 className='juan' style={{fontWeight:'bolder'}}>Introduce Myself ?</h4>
       </div>
 
       

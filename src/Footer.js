@@ -12,12 +12,13 @@ function Footer() {
     
     
     return (
-        <div className="foot">
-            <h1 style={{ textAlign:'center', marginRight:'10%',fontFamily:'monospace',fontSize:'43px',fontWeight:'bolder' }} >Kevin Thomas Duggan </h1>
+        <div className="foot ">
+            
+            <h1 className="footH" >Kevin Thomas Duggan </h1>
         <div style={{ display:'flex', }} id='icons' >
-        <div onClick={handleRClick} style={{height:'90px', width:'90px', backgroundColor:'black', marginLeft:'32%', border:'white 2px solid', borderRadius:'58%', cursor:'pointer'}} id='resume'></div>
-        <div onClick={handleLClick} style={{height:'90px', width:'90px', backgroundColor:'white', marginLeft:'25px', border:'white 2px solid', borderRadius:'8%', cursor:'pointer'}} id='linkedin'></div>
-        <div onClick={handleGClick} style={{height:'90px', width:'90px', marginLeft:'25px', border:'white 2px solid', borderRadius:'58%', cursor:'pointer'}} id='github'></div>
+        <div className="icon1"onClick={handleRClick} style={{ height:'90px'}} id='resume'></div>
+        <div className="icon2" onClick={handleLClick} style={{}} id='linkedin'></div>
+        <div className="icon3" onClick={handleGClick}  id='github'></div>
         </div>
         <h3 style={{ textAlign:'center', marginRight:'10%',fontFamily:'monospace' }}>Oak Lawn, Illinois | 708-280-0622 | kevinduggan95@gmail.com </h3>
         

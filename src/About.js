@@ -4,13 +4,13 @@ function About() {
     return (
         <>
       <div>
-      <h1 className='exsect3' style={{ fontWeight: 'bolder',fontSize:'90px',textAlign:'center',backgroundColor:'black',paddingTop:'10%',marginTop:'-7%',paddingBottom:'2%' }}>About Kevin</h1>
+      <h1 className='exsect3 bigGuy' >About Kevin</h1>
         {/* <h2 className='exsect3' style={{color:'white'}}></h2> */}
         
       </div>
       <div style={{height:'500px',marginLeft:"5%", margin:'5%',  }}className="ye"></div>
       
-      <p className="exsectP">
+      <p className="exsectP upUp">
 Hey there! I'm Kevin, a passionate software engineer with a knack for problem-solving and a love for coding
 
 My journey into the world of software engineering began in 2020 when I decided to pursue my dream while living in the vibrant city of Bangkok. However, my path to becoming a developer was anything but traditional. Prior to diving into coding, I led a diverse life, exploring and taking on different roles. I had the privilege of teaching English online and even engaging in the thrilling world of martial arts, specifically Muay Thai & MMA.
@@ -34,7 +34,7 @@ Let's connect and embark on this exciting coding journey together!</p>
   frameborder="0"
    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
-    style={{ borderRadius: '25%', width: '710px', height: '400px', border: 'orange 5px solid', margin:'5%',marginLeft:"20%"}}
+    className="akavid"
     
     ></iframe></div>
       </>
