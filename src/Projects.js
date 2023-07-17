@@ -8,25 +8,26 @@ function Projects() {
       <h2 className="exsect3">TECHNICAL SKILLS</h2>
       <p className="exsectP" style={{ fontWeight: 'bolder', paddingBottom:'100px' }}>Flask, Python, SQLalchemy, SQL, JavaScript, React, CSS, HTML, Restful API, Git, Stripe, Redux, JSON</p>
 
-      <div className="exsect3" style={{color:'red'}} >
-        <h3 className="proA" style={{ marginBottom: '175px', marginRight: '5px', marginLeft: '-120px', fontSize: '30px' }}>
-          Chicago Fight Team -
+      <div className="exsect3 cft">
+        <h3 className="proT" >
+         - Chicago Fight Team -
         </h3>
-        <a className="proA" style={{ marginBottom: '150px' }} href="https://github.com/Duggan1/Project5-Project-cft">Github</a>
-        <p style={{ display: 'inline-block', marginBottom: '165px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{ marginBottom: '150px' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
-        <p style={{ display: 'inline-block', marginBottom: '165px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{ marginBottom: '150px', marginRight: '50px' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
-        <iframe
+        <div   >
+        <a className="proA" style={{color:'black',cursor: 'pointer' }} href="https://github.com/Duggan1/Project5-Project-cft">Github</a>
+        <p style={{ display: 'inline-block', marginBottom: '20px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
+        <a className="proA" style={{color:'black',cursor: 'pointer' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
+        <p style={{ display: 'inline-block', marginBottom: '20px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
+        <a className="proA" style={{color:'black',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
+        </div></div><div className="textC juan"><iframe
           src="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac"
           frameBorder="0"
           allowFullScreen
           title="Chicago Fight Team Demo"
           style={{ borderRadius: '25%', width: '250px', height: '150px', border: 'darkred 5px solid' }}
-        ></iframe>
-      </div>
+        ></iframe></div>
+      
 
-      <div className="exsectP" style={{ marginTop: '-90px', paddingBottom: '50px' }}>
+      <div className="exsectP" style={{  paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>Developed a functional website allowing users to sign-up and pay for memberships for CFT’s two different gym locations.</p>
         <ul >
           <li>
@@ -41,25 +42,25 @@ function Projects() {
         </ul>
       </div>
 
-      <div className="exsect3" style={{color:'yellow'}}>
-        <h3 className="proA" style={{ marginBottom: '175px', marginRight: '5px', marginLeft: '-120px', fontSize: '30px' }}>
-          KRT -
+      <div className="exsect3 krt">
+        <h3 className="proT" >
+          - KRT -
         </h3>
-        <a className="proA" style={{ marginBottom: '150px' }} href="https://github.com/Duggan1/p4-project-krt">Github</a>
-        <p style={{ display: 'inline-block', marginBottom: '165px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{ marginBottom: '150px' }} href="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0">Demo</a>
-        <p style={{ display: 'inline-block', marginBottom: '165px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{ marginBottom: '150px', marginRight: '50px' }}  href="https://krt-kitchen.onrender.com/">KRT-Kitchen</a>
-        <iframe
+        <a className="proA" style={{ }} href="https://github.com/Duggan1/p4-project-krt">Github</a>
+        <p style={{ display: 'inline-block', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
+        <a className="proA" style={{ }} href="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0">Demo</a>
+        <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
+        <a className="proA" style={{  }}  href="https://krt-kitchen.onrender.com/">KRT-Kitchen</a>
+        </div><div className="textC juan"><iframe
           src="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0"
           frameBorder="0"
           allowFullScreen
           title="KRT-Kitchen Demo"
           style={{ borderRadius: '25%', width: '250px', height: '150px', border: 'yellow 5px solid' }}
-        ></iframe>
-      </div>
+        ></iframe></div>
+      
 
-      <div className="exsectP" style={{ marginTop: '-90px', paddingBottom: '50px' }}>
+      <div className="exsectP" style={{ paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>A dynamic, Full Stack restaurant website enabling users to browse menus, explore locations, and leave reviews.</p>
         <ul>
           <li>Applied React for the frontend implementation, incorporating efficient routing for seamless navigation and providing users with the ability to use full CRUD on reviews.</li>
@@ -68,23 +69,23 @@ function Projects() {
         </ul>
       </div>
 
-      <div className="exsect3" style={{color:'lightblue'}}>
-        <h3 className="proA" style={{ marginBottom: '175px', marginRight: '5px', marginLeft: '-120px', fontSize: '30px' }}>
-          Recipe Box -
+      <div className="exsect3 rbg" >
+        <h3 className="proT">
+          - Recipe Box -
         </h3>
-        <a className="proA" style={{ marginBottom: '150px' }} href="https://github.com/Duggan1/phase-2-project-Recipe-Box">Github</a>
-        <p style={{ display: 'inline-block', marginBottom: '165px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{ marginBottom: '150px', marginRight: '50px' }} href="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69">Demo</a>
-        <iframe
+        <a className="proA" style={{ }} href="https://github.com/Duggan1/phase-2-project-Recipe-Box">Github</a>
+        <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
+        <a className="proA" style={{ }} href="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69">Demo</a>
+        </div><div className="textC juan"><iframe
           src="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69"
           frameBorder="0"
           allowFullScreen
           title="Recipe Box Demo"
           style={{ borderRadius: '25%', width: '250px', height: '150px', border: 'lightblue 5px solid' }}
-        ></iframe>
-      </div>
+        ></iframe></div>
+      
 
-      <div className="exsectP" style={{ marginTop: '-90px', paddingBottom: '50px' }}>
+      <div className="exsectP" style={{  paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>An app that allows users to virtually store and access popular recipes.</p>
         <ul>
           <li>Exercised JavaScript and React to create responsive frontend components.</li>

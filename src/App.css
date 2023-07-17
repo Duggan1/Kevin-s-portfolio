@@ -102,8 +102,8 @@ html {
   font-weight: bolder;
 }         
 .proA {
-  display: inline-block;
-  vertical-align: middle;
+  display:;
+  /* vertical-align: middle;  */
   /* margin-bottom:'150px'; */
   font-size: 16px;
   font-weight:bold;
@@ -237,12 +237,37 @@ html {
   border: orange 5px solid;
   margin-top: 5%;
 }
+.proT {
+  font-size: 45px;
+  font-weight: bolder;
+  }
+.cft {
+  background-color: darkred;
+  color:black;
+  
+}
+.textC {
+  text-align: center;
+}
+.krt {
+  background-color: yellow;
+  color:black;
+  
+}
+.rbg {
+  background-color: lightblue;
+  color:black;
+  
+}
 
 
 
 @media (max-width: 767px) {
   .font-size-60px {
     font-size: 60px;
+  }
+  .proT {
+  font-size: 25px;
   }
   .font-size-55px {
     font-size: 40px;
@@ -267,7 +292,7 @@ html {
     padding-top: 20px;
     margin-top: -3%;
     /* padding-bottom: 1%; */
-    margin-right: 10%;
+    /* margin-right: 10%; */
     padding-right: 10%;
   }
   .akavid {
