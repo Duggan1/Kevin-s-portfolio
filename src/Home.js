@@ -11,13 +11,13 @@ function Home() {
     <>
     <div style={{backgroundColor:'black'}}>
     <h1 className='exsect3 bigGuy font-size-55px juan'>Kevin Duggan</h1></div>
-    <h1 className='juan font-size-25px' style={{textAlign:'center'}}>Kevin Thomas Duggan</h1>
+    <h1 className='juan font-size-20px' style={{textAlign:'center'}}>Kevin Thomas Duggan</h1>
     <div style={{display: 'flex', justifyContent: 'center'}}>
       <div style={{ height: '200px',display: 'flex', justifyContent: 'center'}}className="kevo"></div>
       <div style={{ height: '200px',display: 'flex', justifyContent: 'center'}} className="kevio"></div></div>
       <div style={{ textAlign: 'center' }}>
-        
-        <h2 className='juan font-size-20px'>Computer Software Engineer</h2>
+        <h2 style={{ marginBottom: '-2%' }}className='juan font-size-25px'>Computer</h2>
+        <h2 className='juan font-size-20px'> Software Engineer</h2>
         
         <div style={{ display: 'inline-block'}}className="custom-checkbox">
           <input
