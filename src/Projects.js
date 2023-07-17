@@ -2,8 +2,8 @@ function Projects() {
   return (
     <div>
       <div style={{backgroundColor:'black'}}>
-      <h1 className='exsect3 bigGuy font-size-55px'>My Projects</h1></div>
-      <h2 className="exsect3">Computer Software Engineer</h2>
+      <h1 className='exsect3 bigGuy font-size-55px juan'>My Projects</h1></div>
+      <h2 className="exsect3">Software Engineer</h2>
       <p className="exsectP">Full Stack Web Developer with experience in React.js, Python, and Flask-based programming. Combines a diverse background in teaching, management, sales, and sustainable design to bring a unique perspective to projects. Demonstrates excellent communication, team-building, and project management skills, driving impactful results that enhance the work environment and deliver exceptional outcomes.</p>
       <h2 className="exsect3">TECHNICAL SKILLS</h2>
       <p className="exsectP" style={{ fontWeight: 'bolder', paddingBottom:'100px' }}>Flask, Python, SQLalchemy, SQL, JavaScript, React, CSS, HTML, Restful API, Git, Stripe, Redux, JSON</p>

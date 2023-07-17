@@ -244,6 +244,7 @@ html {
 .cft {
   background-color: darkred;
   color:black;
+  margin-right: 15%;
   
 }
 .textC {
@@ -271,7 +272,7 @@ html {
   }
   .font-size-55px {
     font-size: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
   .font-size-25px {
     font-size: 25px;

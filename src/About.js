@@ -4,7 +4,7 @@ function About() {
     return (
         <>
       <div style={{backgroundColor:'black'}}>
-      <h1 className='exsect3 bigGuy font-size-55px' >About Kevin</h1>
+      <h1 className='exsect3 bigGuy font-size-55px juan' >About Kevin</h1>
         {/* <h2 className='exsect3' style={{color:'white'}}></h2> */}
         
       </div>
