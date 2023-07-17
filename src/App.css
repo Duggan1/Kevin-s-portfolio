@@ -230,6 +230,14 @@ html {
   margin: 5%;
   margin-left: 20%;
 }
+.amtri {
+  border-radius: 25%;
+  width: 710px;
+  height: 400px;
+  border: orange 5px solid;
+  margin-top: 5%;
+}
+
 
 
 @media (max-width: 767px) {
@@ -237,12 +245,21 @@ html {
     font-size: 60px;
   }
   .font-size-55px {
-    font-size: 45px;
+    font-size: 40px;
   }
   .font-size-25px {
     font-size: 25px;
 
   }
+  .amtri {
+    border-radius: 25%;
+    width: 80%;
+    height: 250px;
+    border: orange 5px solid;
+    margin-top: 5%;
+    margin-right: 15%;
+  }
+  
   .exsect3 {
     padding-top: 20px;
     margin-top: -3%;

@@ -42,7 +42,7 @@ function Home() {
             allowFullScreen
             title="kevin"
             
-            style={{ borderRadius: '25%', width: '710px', height: '400px', border: 'orange 5px solid', marginTop:'5%' }}
+            className='amtri'
           ></iframe>
         )}
 
