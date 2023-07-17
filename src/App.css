@@ -246,6 +246,7 @@ html {
   }
   .font-size-55px {
     font-size: 40px;
+    padding-bottom: 30px;
   }
   .font-size-25px {
     font-size: 25px;
@@ -265,7 +266,7 @@ html {
   .exsect3 {
     padding-top: 20px;
     margin-top: -3%;
-    padding-bottom: 1%;
+    /* padding-bottom: 1%; */
     margin-right: 10%;
     padding-right: 10%;
   }
@@ -306,7 +307,7 @@ html {
   .exsectP {
     margin: 0 0% 0 2%;
     line-height: 2.5;
-    margin-right: 22%;
+    margin-right: 25%;
   }
         
   .juan {
