@@ -243,8 +243,9 @@ html {
   }
 .cft {
   background-color: darkred;
-  color:black;
-  margin-right: 15%;
+  color:white;
+  padding-right: 200px;
+  
   
 }
 .textC {
@@ -288,10 +289,14 @@ html {
     margin-top: 5%;
     margin-right: 15%;
   }
+  #midcft {
+    padding-right: 20%;
+
+  }
   
   .exsect3 {
-    padding-top: 20px;
-    margin-top: -3%;
+    /* padding-top: 20px;
+    margin-top: -3%; */
     /* padding-bottom: 1%; */
     /* margin-right: 10%; */
     padding-right: 10%;
@@ -333,7 +338,7 @@ html {
   .exsectP {
     margin: 0 0% 0 2%;
     line-height: 2.5;
-    margin-right: 25%;
+    margin-right: 27%;
   }
         
   .juan {

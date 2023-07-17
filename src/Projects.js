@@ -8,16 +8,16 @@ function Projects() {
       <h2 className="exsect3">TECHNICAL SKILLS</h2>
       <p className="exsectP" style={{ fontWeight: 'bolder', paddingBottom:'100px' }}>Flask, Python, SQLalchemy, SQL, JavaScript, React, CSS, HTML, Restful API, Git, Stripe, Redux, JSON</p>
 
-      <div className="exsect3 cft">
+      <div id='midcft' className="exsect3 cft">
         <h3 className="proT" >
          - Chicago Fight Team -
         </h3>
         <div   >
-        <a className="proA" style={{color:'black',cursor: 'pointer' }} href="https://github.com/Duggan1/Project5-Project-cft">Github</a>
+        <a className="proA" style={{color:'white',cursor: 'pointer' }} href="https://github.com/Duggan1/Project5-Project-cft">Github</a>
         <p style={{ display: 'inline-block', marginBottom: '20px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'black',cursor: 'pointer' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
+        <a className="proA" style={{color:'white',cursor: 'pointer' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
         <p style={{ display: 'inline-block', marginBottom: '20px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'black',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
+        <a className="proA" style={{color:'white',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
         </div></div><div className="textC juan"><iframe
           src="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac"
           frameBorder="0"
