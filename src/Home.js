@@ -16,7 +16,7 @@ function Home() {
       <div style={{ height: '200px',display: 'flex', justifyContent: 'center'}}className="kevo"></div>
       <div style={{ height: '200px',display: 'flex', justifyContent: 'center'}} className="kevio"></div></div>
       <div style={{ textAlign: 'center' }}>
-        <h2 style={{ marginBottom: '-2%' }}className='juan font-size-25px'>Computer</h2>
+        <h2 style={{ marginBottom: '-1%' }}className='juan font-size-25px'>Computer</h2>
         <h2 className='juan font-size-20px'> Software Engineer</h2>
         
         <div style={{ display: 'inline-block'}}className="custom-checkbox">

@@ -11,7 +11,18 @@ html {
   height: 100vh;
   padding-right: 1%; /* Add desired padding */
 }
+.orp {
+  background-color: purple;
+  color: white;
+  text-align: center;
+  /* padding-right: 150px; */
 
+}
+.ttt {
+  background-color: navy;
+  color: white;
+  text-align: center;
+}
 .header {
   position: fixed;
   top: 0;
@@ -95,12 +106,28 @@ html {
   text-align: center;
   color:orange;
 }
-
+.juan2 {
+  border: solid orange 3px;
+  border-radius: 90%;
+  background-color: black;
+  padding: 10%;
+  align-items: center;
+  text-align: center;
+  margin:  0px 20% 0px 20%;
+  max-width: fit-content;
+  min-width: fit-content;
+  
+}
 .exsectP {
   margin: 0 20% 0 5%;
   line-height: 2.5;
   font-weight: bolder;
-}         
+}    
+.exsectSK {
+  
+  line-height: 2.5;
+  font-weight: bolder;
+}       
 .proA {
   display:;
   /* vertical-align: middle;  */
@@ -117,6 +144,14 @@ html {
   padding-bottom: 5%;
   margin-bottom: -7%;
   
+}
+.footH {
+  text-align: center;
+   margin-right: ;
+   font-family: monospace ;
+   font-size: 43px ;
+   font-weight: bolder ;
+
 }
 .custom-checkbox {
   width: 340px;
@@ -174,19 +209,12 @@ html {
   left: 50%;
   content: attr(data-checked);
 }
-.footH {
-  text-align: center;
-   margin-right: 10% ;
-   font-family: monospace ;
-   font-size: 43px ;
-   font-weight: bolder ;
 
-}
 .icon1 {
   min-height: 90px;
   width: 90px;
   background-color: black;
-  margin-left: 32%;
+  /* margin-left: 32%; */
   border: white 2px solid;
   border-radius: 58%;
   cursor: pointer;
@@ -244,7 +272,7 @@ html {
 .cft {
   background-color: darkred;
   color:white;
-  padding-right: 200px;
+  /* padding-right: 200px; */
   
   
 }
@@ -318,7 +346,7 @@ html {
     font-size: 25px;
   }
   .icon1 {
-    margin-left: 15%;
+    /* margin-left: 15%; */
     min-height: 65px;
     
     
