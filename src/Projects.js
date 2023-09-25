@@ -6,16 +6,18 @@ function Projects() {
     <div>
       <div style={{backgroundColor:'black'}}>
       <h1 className='exsect3 bigGuy font-size-55px juan'>My Projects</h1></div>
+      <div className='home2'>
       <h2 className="exsect3 juan">Software Engineer</h2>
-      <p className="exsectP">Full Stack Web Developer with experience in React.js, Python, and Flask-based programming. Combines a diverse background in teaching, management, sales, and sustainable design to bring a unique perspective to projects. Demonstrates excellent communication, team-building, and project management skills, driving impactful results that enhance the work environment and deliver exceptional outcomes.</p>
       
       <div className="juan2">
-      <h2 className="exsect3 "  style={{ fontWeight: 'bolder'}}>TECHNICAL SKILLS</h2>
-      <p className="exsectSK" style={{ fontWeight: 'bold',textAlign:'center' }}>Flask, Python, SQLalchemy, PostgreSQL,</p>
-      <p className="exsectSK" style={{ fontWeight: 'bold',textAlign:'center' }}>SQL, JavaScript, React, CSS, HTML,</p>
-      <p className="exsectSK" style={{ fontWeight: 'bold',textAlign:'center' }}> Restful API, Git, Stripe, Redux, JSON</p></div>
+      <h2 className="exsect3 "  style={{ fontWeight: 'bolder',textShadow: '0 0 15px white'}}>TECHNICAL SKILLS</h2>
+      <p className="exsectSK" style={{ fontWeight: 'bold',textAlign:'center' }}>Flask, Python, SQLalchemy, PostgreSQL,
+      SQL, JavaScript, React, CSS, HTML,
+      Restful API, Git, Stripe, Redux, JSON</p></div>
+      <p className="exsectP" style={{textAlign:'center',textShadow: '0 0 15px black',backgroundColor:'black',marginLeft:'0%',borderTop: '2px solid white',borderRight: '2px solid white',paddingBottom:'5%'}}>Full Stack Web Developer with experience in React.js, Python, and Flask-based programming. Combines a diverse background in teaching, management, sales, and sustainable design to bring a unique perspective to projects. Demonstrates excellent communication, team-building, and project management skills, driving impactful results that enhance the work environment and deliver exceptional outcomes.</p>
       
-
+        </div>
+        
 
       <div id='midcft' className=" orp" >
         <h3 className="proT">
@@ -55,11 +57,11 @@ function Projects() {
          - Chicago Fight Team -
         </h3>
         <div   >
-        <a className="proA" style={{color:'blue',cursor: 'pointer' }} href="https://github.com/Duggan1/Project5-Project-cft">Github</a>
+        <a className="proA" style={{color:'black',cursor: 'pointer',textShadow: '0 0 15px white' }} href="https://github.com/Duggan1/Project5-Project-cft">Github</a>
         <p style={{ display: 'inline-block', marginBottom: '20px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'blue',cursor: 'pointer' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
+        <a className="proA" style={{color:'black',cursor: 'pointer',textShadow: '0 0 15px white' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
         <p style={{ display: 'inline-block', marginBottom: '20px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'blue',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
+        <a className="proA" style={{color:'black',textShadow: '0 0 15px white',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
         </div></div><div className="textC juan"><iframe
           src="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac"
           frameBorder="0"
