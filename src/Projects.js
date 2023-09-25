@@ -1,3 +1,6 @@
+import walkthruOTRP from './walkthruOTRP.mp4'
+
+
 function Projects() {
   return (
     <div>
@@ -22,13 +25,16 @@ function Projects() {
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
         <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://offtherecordpicks.onrender.com/">Off Record Picks</a>
         </div><div className="textC juan">
-          {/* <iframe
-          src="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69"
-          frameBorder="0"
-          allowFullScreen
-          title="Recipe Box Demo"
-          style={{ borderRadius: '25%', width: '250px', height: '150px', border: 'lightblue 5px solid' }}
-        ></iframe> */}
+        <div className="textC juan">
+        <video
+        controls // Add controls for play, pause, and volume
+        style={{ borderRadius: '5%', width: '250px', height: '200px', border: 'purple 5px solid' }}
+      >
+        <source src={walkthruOTRP} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+</div>
+
         </div>
       
 
@@ -59,7 +65,7 @@ function Projects() {
           frameBorder="0"
           allowFullScreen
           title="Chicago Fight Team Demo"
-          style={{ borderRadius: '25%', width: '250px', height: '150px', border: 'darkred 5px solid' }}
+          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'darkred 5px solid' }}
         ></iframe></div>
       
 
@@ -120,7 +126,7 @@ function Projects() {
           frameBorder="0"
           allowFullScreen
           title="KRT-Kitchen Demo"
-          style={{ borderRadius: '25%', width: '250px', height: '150px', border: 'yellow 5px solid' }}
+          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'yellow 5px solid' }}
         ></iframe></div>
       
 
@@ -145,7 +151,7 @@ function Projects() {
           frameBorder="0"
           allowFullScreen
           title="Recipe Box Demo"
-          style={{ borderRadius: '25%', width: '250px', height: '150px', border: 'lightblue 5px solid' }}
+          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'lightblue 5px solid' }}
         ></iframe></div>
       
 
