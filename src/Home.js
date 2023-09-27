@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import walkthruOTRP from './walkthruOTRP.mp4'
 
 function Home() {
   const [showVideo, setShowVideo] = useState(false);
@@ -6,6 +7,12 @@ function Home() {
   const toggleVideoVisibility = () => {
     setShowVideo(!showVideo);
   };
+  const [latestProject, setlatestProject] = useState(false);
+
+  const togglelatestProject = () => {
+    setlatestProject(!latestProject);
+  };
+  
 
   return (
     <div className='home2'>
@@ -47,7 +54,25 @@ function Home() {
         )}
 
         <h4 className='juan' style={{fontWeight:'bolder'}}>Introduce Myself ?</h4>
+        <button style={{backgroundColor:"darkorange",color:'black',border:'white 3px solid', padding :'1%',fontWeight:'bold'}} className='juan' onClick={togglelatestProject}>
+  {latestProject ? 'Hide Most Recent Work' : 'View Most Recent Work'}
+</button>
+
+
       </div>
+      
+     
+
+      { latestProject ?
+      <div className="textC juan">
+        <video
+        controls // Add controls for play, pause, and volume
+        style={{ borderRadius: '5%', width: '250px', height: '200px', border: 'white 5px solid' }}
+      >
+        <source src={walkthruOTRP} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+</div> : null}
 
       
     </div>
