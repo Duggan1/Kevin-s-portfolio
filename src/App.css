@@ -338,6 +338,18 @@ html {
   .font-size-60px {
     font-size: 60px;
   }
+  .juan2 {
+    border: solid orange 3px;
+    border-radius: 90%;
+    background-color: black;
+    padding: 10%;
+    align-items: center;
+    text-align: center;
+    margin:  0px 30% 0px 2%;
+    max-width: fit-content;
+    min-width: fit-content;
+    
+  }
 
 
   .home2 {
