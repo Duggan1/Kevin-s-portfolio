@@ -35,6 +35,25 @@ html {
   right: 0;
 
 }
+.toggle-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
 .hbl{
   background-color: rgb(231, 145, 24);
   padding: 70% 0%;

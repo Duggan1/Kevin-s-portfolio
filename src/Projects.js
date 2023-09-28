@@ -1,7 +1,48 @@
 import walkthruOTRP from './walkthruOTRP.mp4'
+import React, { useState } from 'react';
+
 
 
 function Projects() {
+  const [showORP, setShowORP] = useState(false);
+  const [showCFT, setShowCFT] = useState(false);
+  const [showTTT, setShowTTT] = useState(false);
+  const [showKRT, setShowKRT] = useState(false);
+  const [showRBG, setShowRBG] = useState(false);
+
+  function toggleORP() {
+    setShowORP(!showORP);
+  }
+  function toggleCFT() {
+    setShowCFT(!showCFT);
+  }
+  function toggleTTT() {
+    setShowTTT(!showTTT);
+  }
+  function toggleKRT() {
+    setShowKRT(!showKRT);
+  }
+  function toggleRBG() {
+    setShowRBG(!showRBG);
+  }
+
+  const [showAll, setShowAll] = useState(false);
+  const toggleAll = () => {
+    setShowAll(!showAll);
+    setShowORP(!showAll);
+    setShowCFT(!showAll);
+    setShowTTT(!showAll);
+    setShowKRT(!showAll);
+    setShowRBG(!showAll);
+  };
+  
+
+
+
+
+
+
+
   return (
     <div>
       <div style={{backgroundColor:'black'}}>
@@ -18,15 +59,36 @@ function Projects() {
       
         </div>
         
+        
+        <div style={{ fontWeight: 'bold',textAlign:'center',backgroundColor:'black',borderTop:"white 3px solid" }} >
+         <p style={{ color: 'orange' }}>Individually Click the Headers to see the projects details </p><p style={{ color: 'orange' }}>or Use the Button to toggle </p>
+         <button onClick={toggleAll}>
+          {showAll ? (
+            <span style={{ color: 'red', borderRadius: '50%', width: '20px', height: '20px', display: 'inline-block', backgroundColor: 'red' }}></span>
+          ) : (
+            <span style={{ color: 'green', borderRadius: '50%', width: '20px', height: '20px', display: 'inline-block', backgroundColor: 'green' }}></span>
+          )}
+          &nbsp;{showAll ? 'Hide all' : 'Show all'}
+        </button>
+        
+          
 
-      <div id='midcft' className=" orp" >
-        <h3 className="proT">
+
+
+
+
+
+        </div>
+      <div id='midcft' className=" orp" onClick={toggleORP} style={{cursor:'pointer',marginTop:'0px'}} >
+        <h3 className="proT" >
           - Off Record Picks -
         </h3>
         <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://github.com/Duggan1/offRecord">Github</a>
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
         <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://offtherecordpicks.onrender.com/">Off Record Picks</a>
-        </div><div className="textC juan">
+        </div>
+        { showORP && ( <>
+           <div className="textC juan">
         <div className="textC juan">
         <video
         controls // Add controls for play, pause, and volume
@@ -37,9 +99,7 @@ function Projects() {
       </video>
 </div>
 
-        </div>
-      
-
+            </div>
       <div className="exsectP" style={{  paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>This innovative application offers UFC enthusiasts the opportunity to showcase their predictive prowess by making fight picks for UFC events and engaging in a friendly competition with fellow fans, all without the involvement of real currency.</p>
         <ul>
@@ -47,12 +107,13 @@ function Projects() {
           <li>Behind the scenes, a robust backend powered by Flask, a Python web framework, and PostgreSQL, a secure relational database, ensures the safe and structured storage of user data and their astute predictions.</li>
           <li>Notably, the application incorporates an Admin account with the authority to post-event results. This administrative capability is pivotal, as it triggers an automated evaluation process that meticulously assesses each user's predictions, duly awarding points for each impeccably foreseen match outcome.</li>
         </ul>
-      </div>
+      </div></>
+      )}
 
 
 
 
-      <div id='midcft' className="exsect3 cft">
+      <div id='midcft' className="exsect3 cft" onClick={toggleCFT} style={{cursor:'pointer'}} >
         <h3 className="proT" >
          - Chicago Fight Team -
         </h3>
@@ -62,15 +123,16 @@ function Projects() {
         <a className="proA" style={{color:'black',cursor: 'pointer',textShadow: '0 0 15px white' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
         <p style={{ display: 'inline-block', marginBottom: '20px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
         <a className="proA" style={{color:'black',textShadow: '0 0 15px white',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
-        </div></div><div className="textC juan"><iframe
+        </div>
+        </div>
+        {showCFT && (<>
+        <div className="textC juan"><iframe
           src="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac"
           frameBorder="0"
           allowFullScreen
           title="Chicago Fight Team Demo"
           style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'darkred 5px solid' }}
         ></iframe></div>
-      
-
       <div className="exsectP" style={{  paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>Developed a functional website allowing users to sign-up and pay for memberships for CFT’s two different gym locations.</p>
         <ul >
@@ -84,28 +146,21 @@ function Projects() {
             Configured Flask to collect detailed information about users, gyms, and memberships, facilitating effective management of each gym's business operations.
           </li>
         </ul>
-      </div>
+      </div></>)}
 
 
-      <div id='midcft' className=" ttt" >
+      <div id='midcft' className=" ttt" onClick={toggleTTT} style={{cursor:'pointer'}}>
         <h3 className="proT">
           - Trish the Teacher -
         </h3>
         <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://github.com/Duggan1/Trish-the-Teacher">Github</a>
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
         <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://trishtheteacher.com/">TrishTheTeacher.com</a>
-        </div><div className="textC juan">
-          {/* <iframe
-          src="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69"
-          frameBorder="0"
-          allowFullScreen
-          title="Recipe Box Demo"
-          style={{ borderRadius: '25%', width: '250px', height: '150px', border: 'lightblue 5px solid' }}
-        ></iframe> */}
         </div>
-      
-
-      <div className="exsectP" style={{  paddingBottom: '50px' }}>
+        {showTTT && (<>
+        <div className="textC juan">
+        </div>
+         <div className="exsectP" style={{  paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>This dynamic website serves as a comprehensive platform designed to empower both parents and students by offering a seamless blend of tutoring services and enriching educational content. Its primary mission is to enhance classroom performance through tailored guidance and accessible learning resources</p>
         <ul>
         <li>Prior to committing to tutoring lessons, users are provided with the invaluable opportunity to explore the website's extensive content and program details. This feature allows for an informed decision-making process, ensuring users are well-equipped to make the best choice for their educational journey.</li>
@@ -113,8 +168,9 @@ function Projects() {
           <li>To streamline the process further, the website incorporates a secure payment section using Stripe. This enables students to conveniently finance their tutoring lessons online, ensuring a hassle-free experience</li>
         </ul>
       </div>
+      </>)}
 
-      <div className="exsect3 krt">
+      <div className="exsect3 krt" onClick={toggleKRT} style={{cursor:'pointer'}} >
         <h3 className="proT" >
           - KRT -
         </h3>
@@ -123,16 +179,16 @@ function Projects() {
         <a className="proA" style={{color:'blue',cursor: 'pointer' }} href="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0">Demo</a>
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
         <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://krt-kitchen.onrender.com/">KRT-Kitchen</a>
-        </div><div className="textC juan"><iframe
+        </div>
+        {showKRT && (<>
+        <div className="textC juan"><iframe
           src="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0"
           frameBorder="0"
           allowFullScreen
           title="KRT-Kitchen Demo"
           style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'yellow 5px solid' }}
         ></iframe></div>
-      
-
-      <div className="exsectP" style={{ paddingBottom: '50px' }}>
+          <div className="exsectP" style={{ paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>A dynamic, Full Stack restaurant website enabling users to browse menus, explore locations, and leave reviews.</p>
         <ul>
           <li>Applied React for the frontend implementation, incorporating efficient routing for seamless navigation and providing users with the ability to use full CRUD on reviews.</li>
@@ -140,23 +196,26 @@ function Projects() {
           <li>Integrated the Google Maps API to enhance the user experience, enabling an easy exploration of designated locations.</li>
         </ul>
       </div>
+      </>)}
 
-      <div className="exsect3 rbg" >
+
+
+      <div className="exsect3 rbg"onClick={toggleRBG}style={{cursor:'pointer'}} >
         <h3 className="proT">
           - Recipe Box -
         </h3>
         <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://github.com/Duggan1/phase-2-project-Recipe-Box">Github</a>
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
         <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69">Demo</a>
-        </div><div className="textC juan"><iframe
+        </div>
+        {showRBG && (<>
+        <div className="textC juan"><iframe
           src="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69"
           frameBorder="0"
           allowFullScreen
           title="Recipe Box Demo"
           style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'lightblue 5px solid' }}
         ></iframe></div>
-      
-
       <div className="exsectP" style={{  paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>An app that allows users to virtually store and access popular recipes.</p>
         <ul>
@@ -165,6 +224,13 @@ function Projects() {
           <li>Combined custom CSS and Semantic UI CSS to design the frontend interface.</li>
         </ul>
       </div>
+      </>)}
+
+
+
+
+
+
     </div>
   );
 }
