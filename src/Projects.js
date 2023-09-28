@@ -7,7 +7,7 @@ function Projects() {
       <div style={{backgroundColor:'black'}}>
       <h1 className='exsect3 bigGuy font-size-55px juan'>My Projects</h1></div>
       <div className='home2'>
-      <h2 className="exsect3 juan">Software Engineer</h2>
+      <h2 style={{ fontWeight: 'bolder',textShadow: '0 0 15px black'}} className="exsect3 juan">Software Engineer</h2>
       
       <div className="juan2">
       <h2 className="exsect3 "  style={{ fontWeight: 'bolder',textShadow: '0 0 15px white'}}>TECHNICAL SKILLS</h2>

@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(70, 66, 66);
+  background-color: rgb(42, 40, 40);
   color: gainsboro
 }
 .navLink {
@@ -17,6 +17,12 @@ html {
   text-align: center;
   /* padding-right: 150px; */
 
+}
+.adjborder {
+  border-top: black solid 5px;
+  border-right: black solid 10px;
+  border-bottom: black solid 10px;
+  border-left: black solid 5px;
 }
 .ttt {
   background-color: navy;

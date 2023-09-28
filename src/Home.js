@@ -18,15 +18,16 @@ function Home() {
     <div className='home2'>
     <div style={{backgroundColor:'black'}}>
     <h1 className='exsect3 bigGuy font-size-55px juan' >Kevin Duggan</h1></div>
+    <h1 className='juan font-size-20px' style={{textAlign:'center',textShadow: '0 0 15px black',}}>Full Stack Engineer</h1>
     <h1 className='juan font-size-25px' style={{textAlign:'center',textShadow: '0 0 15px black',}}>Kevin Thomas Duggan</h1>
+    
     <div style={{display: 'flex', justifyContent: 'center'}}>
       <div style={{ height: '200px',display: 'flex', justifyContent: 'center'}}className="kevo"></div>
       <div style={{ height: '200px',display: 'flex', justifyContent: 'center'}} className="kevio"></div></div>
       <div style={{ textAlign: 'center' }}>
-        <h2 style={{ marginBottom: '-1%' }}className='juan font-size-25px'>Computer</h2>
-        <h2 className='juan font-size-20px'> Software Engineer</h2>
         
-        <div style={{ display: 'inline-block'}}className="custom-checkbox">
+        <h4 className='juan' style={{fontWeight:'bolder'}}>Introduce Myself ?</h4>
+        <div style={{ display: 'inline-block'}}className="custom-checkbox adjborder">
           <input
             id="status"
             type="checkbox"
@@ -52,9 +53,18 @@ function Home() {
             className='amtri'
           ></iframe>
         )}
-
-        <h4 className='juan' style={{fontWeight:'bolder'}}>Introduce Myself ?</h4>
-        <button style={{backgroundColor:"darkorange",color:'black',border:'white 3px solid', padding :'1%',fontWeight:'bold'}} className='juan' onClick={togglelatestProject}>
+        <h2 style={{ marginBottom: '-1%' }}className='juan font-size-25px'>Computer</h2>
+        <h2 className='juan font-size-20px'> Software Engineer</h2>
+        
+        <button style={{backgroundColor:"darkorange",
+        color:'black',
+        textShadow:'white',
+        border:'white 3px solid', 
+        padding :'1%',
+        fontWeight:'bold'
+      }}
+         className='juan'
+         onClick={togglelatestProject}>
   {latestProject ? 'Hide Most Recent Work' : 'View Most Recent Work'}
 </button>
 
