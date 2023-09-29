@@ -19,9 +19,12 @@ However, fate had a different plan for me. A knee injury forced me to slow down 
 
 I started my journey afresh, this time with Python as my chosen language. I delved into online tutorials and books, spending countless hours honing my coding skills. Although it wasn't always smooth sailing, I persisted, motivated by the words of encouragement from friends and the belief that every experience, contributes to growth.
 
-To ensure I was on the right track, I sought advice from experienced programmers who emphasized the importance of structure and a clear learning path. With their guidance, I enrolled in Codecademy, where I further developed my Python skills and expanded my knowledge of JavaScript, HTML, and CSS. Codecademy provided a solid foundation, but I craved a more immersive learning experience that would allow me to apply my skills in practical projects.
+To ensure I was on the right track, I sought advice from experienced programmers who emphasized the importance of structure and a clear learning path. With their guidance, I signed up to Codecademy, where I further developed my Python skills and expanded my knowledge of JavaScript, HTML, and CSS. Codecademy provided a solid foundation, but I craved a more immersive learning experience that would allow me to apply my skills in practical projects.
 
-That's when I discovered Flat Iron School. Following the recommendation of a friend who shared my passion for both coding and martial arts, I made the bold decision to quit my job and join the bootcamp. It was a leap of faith that changed my life. Through intensive training and hands-on projects, I gained invaluable experience and learned to tackle real-world challenges head-on.
+</p>
+<img className="codinggif" src="https://i.pinimg.com/originals/ef/2d/b0/ef2db0885d94fd149a4b7914923bb2a3.gif" alt="Animated GIF"></img>
+
+<p className="exsectP ">That's when I discovered Flat Iron School. Following the recommendation of a friend who shared my passion for both coding and martial arts, I made the bold decision to quit my job and join the bootcamp. Through intensive training and hands-on projects, I gained invaluable experience and learned to tackle real-world challenges head-on.
 
 Today, I'm an enthusiastic software engineer, eager to contribute my skills and knowledge to create innovative solutions. Whether it's building user-friendly websites or developing robust applications, I approach each project with a combination of creativity, determination, and attention to detail.
 

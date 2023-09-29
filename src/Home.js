@@ -12,6 +12,9 @@ function Home() {
   const togglelatestProject = () => {
     setlatestProject(!latestProject);
   };
+  const handleNewProClick = () => {
+    window.open("https://offtherecordpicks.onrender.com", "_blank");
+  }
   
 
   return (
@@ -75,13 +78,17 @@ function Home() {
 
       { latestProject ?
       <div className="textC juan">
+       
         <video
         controls // Add controls for play, pause, and volume
         style={{ borderRadius: '5%', width: '250px', height: '200px', border: 'white 5px solid' }}
       >
         <source src={walkthruOTRP} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video><br></br> <label 
+        className='newProHome'
+      onClick={handleNewProClick}
+      >Off the Record Picks</label>
 </div> : null}
 
       
