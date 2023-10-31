@@ -1,6 +1,6 @@
 
 
-function Experience() {
+function Experience({marginADJ}) {
 
 
   
@@ -13,8 +13,8 @@ function Experience() {
 
     return (
       <div>
-        <div style={{backgroundColor:'black'}}>
-        <h2 className="exsect3 bigGuy font-size-55px juan">Experience</h2></div>
+        <div style={{backgroundColor:'rgb(2, 2, 31)'}}>
+        <h2 style={{marginLeft:marginADJ}} className="exsect3 bigGuy font-size-55px juan">Experience</h2></div>
         
         <p className="exsectP "> As a Full Stack Web Developer with a passion for problem-solving and a diverse background in teaching, management, sales, and sustainable design, my journey as a software engineer has been an exciting and fulfilling one. I'll take you through my experiences, projects, and the skills I've gained along the way, showcasing how my unique perspective and dedication have propelled me in the world of coding.</p>
 

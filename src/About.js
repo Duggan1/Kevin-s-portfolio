@@ -1,6 +1,6 @@
 
 
-function About() {
+function About({marginADJ}) {
     return (
         <>
       <div style={{backgroundColor:'black'}}>
@@ -13,7 +13,7 @@ function About() {
       <p className="exsectP upUp">
 Hey there! I'm Kevin, a passionate software engineer with a knack for problem-solving and a love for coding
 
-My journey into the world of software engineering began in 2020 when I decided to pursue my dream while living in the vibrant city of Bangkok. However, my path to becoming a developer was anything but traditional. Prior to diving into coding, I led a diverse life, exploring and taking on different roles. I had the privilege of teaching English online and even engaging in the thrilling world of martial arts, specifically Muay Thai & MMA.
+My journey into the world of software engineering began in 2020 when I decided to pursue my dream while living in the city of Bangkok. However, my path to becoming a developer was anything but traditional. Prior to diving into coding, I led a diverse life, exploring and taking on different roles. I had the privilege of teaching English online and even engaging in the thrilling world of martial arts, specifically Muay Thai & MMA.
 
 However, fate had a different plan for me. A knee injury forced me to slow down and reevaluate my career path. It was during this time that I rediscovered my passion for coding and decided to give it another shot. Despite previous setbacks, I knew that with determination and a fresh perspective, I would succeed.
 
@@ -22,7 +22,7 @@ I started my journey afresh, this time with Python as my chosen language. I delv
 To ensure I was on the right track, I sought advice from experienced programmers who emphasized the importance of structure and a clear learning path. With their guidance, I signed up to Codecademy, where I further developed my Python skills and expanded my knowledge of JavaScript, HTML, and CSS. Codecademy provided a solid foundation, but I craved a more immersive learning experience that would allow me to apply my skills in practical projects.
 
 </p>
-<img className="codinggif" src="https://i.pinimg.com/originals/ef/2d/b0/ef2db0885d94fd149a4b7914923bb2a3.gif" alt="Animated GIF"></img>
+<img className="codinggif" src="https://media.licdn.com/dms/image/D5616AQG9Ig_oCeIBlg/profile-displaybackgroundimage-shrink_350_1400/0/1685647981093?e=1703721600&v=beta&t=zyATnVmcc0u1LLY7-CZMbHaflQhBofTteYB_vZIto4k" alt="Animated GIF"></img>
 
 <p className="exsectP ">That's when I discovered Flat Iron School. Following the recommendation of a friend who shared my passion for both coding and martial arts, I made the bold decision to quit my job and join the bootcamp. Through intensive training and hands-on projects, I gained invaluable experience and learned to tackle real-world challenges head-on.
 
@@ -37,7 +37,12 @@ Let's connect and embark on this exciting coding journey together!</p>
   frameborder="0"
    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
-    className="akavid"
+    className="akavid relative"
+    style={{
+      marginLeft: marginADJ === "0%" ? "20%" : marginADJ,
+      width: '50%',
+      justifyContent: 'center'
+    }}
     
     ></iframe></div>
       </>

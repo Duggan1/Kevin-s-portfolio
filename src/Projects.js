@@ -1,14 +1,30 @@
 import walkthruOTRP from './walkthruOTRP.mp4'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 
-function Projects() {
+function Projects({projectON, marginADJ }) {
   const [showORP, setShowORP] = useState(false);
   const [showCFT, setShowCFT] = useState(false);
   const [showTTT, setShowTTT] = useState(false);
   const [showKRT, setShowKRT] = useState(false);
   const [showRBG, setShowRBG] = useState(false);
+  const [projectONE, setprojectONE] = useState(0);
+  const [dataLoaded, setdataLoaded] = useState(false);
+  console.log(marginADJ)
+  useEffect(() => {
+    if (projectON) {
+      setShowORP(false)
+      setShowCFT(false)
+      setShowTTT(false)
+      setShowKRT(false)
+      setShowRBG(false)
+      setprojectONE(projectON);
+      
+    }
+  }, [projectON]); 
+  
+
 
   function toggleORP() {
     setShowORP(!showORP);
@@ -21,9 +37,49 @@ function Projects() {
   }
   function toggleKRT() {
     setShowKRT(!showKRT);
-  }
+  };
   function toggleRBG() {
     setShowRBG(!showRBG);
+  }
+  if (projectONE === 1 ) {
+    setShowORP(true)
+    setShowCFT(false)
+    setShowTTT(false)
+    setShowKRT(false)
+    setShowRBG(false)
+    setprojectONE(0)
+  }
+  if (projectONE === 2 ) {
+    setShowORP(false)
+    setShowCFT(true)
+    setShowTTT(false)
+    setShowKRT(false)
+    setShowRBG(false)
+    setprojectONE(0)
+  }
+  if (projectONE === 3 ) {
+    setShowORP(false)
+    setShowCFT(false)
+    setShowTTT(true)
+    setShowKRT(false)
+    setShowRBG(false)
+    setprojectONE(0)
+  }
+  if (projectONE === 4 ) {
+    setShowORP(false)
+    setShowCFT(false)
+    setShowTTT(false)
+    setShowKRT(true)
+    setShowRBG(false)
+    setprojectONE(0)
+  }
+  if (projectONE === 5 ) {
+    setShowORP(false)
+    setShowCFT(false)
+    setShowTTT(false)
+    setShowKRT(false)
+    setShowRBG(true)
+    setprojectONE(0)
   }
 
   const [showAll, setShowAll] = useState(false);
@@ -44,59 +100,56 @@ function Projects() {
 
 
   return (
-    <div>
-      <div style={{backgroundColor:'black'}}>
+    <div style={{ backgroundColor: "rgb(2, 2, 31)"}}>
+      <div style={{backgroundColor:'gb(2, 2, 31)'}}>
       <h1 className='exsect3 bigGuy font-size-55px juan'>My Projects</h1></div>
-      <div className='home2'>
-      <h2 style={{ fontWeight: 'bolder',textShadow: '0 0 15px black'}} className="exsect3 juan">Software Engineer</h2>
       
-      <div className="juan2">
-      <h2 className="exsect3 "  style={{ fontWeight: 'bolder',textShadow: '0 0 15px white'}}>TECHNICAL SKILLS</h2>
-      <p className="exsectSK" style={{ fontWeight: 'bold',textAlign:'center' }}>Flask, Python, SQLalchemy, PostgreSQL,
-      SQL, JavaScript, React, CSS, HTML,
-      Restful API, Git, Stripe, Redux, JSON</p></div>
-      <p className="exsectP" style={{textAlign:'center',textShadow: '0 0 15px black',backgroundColor:'black',marginLeft:'0%',borderTop: '2px solid white',borderRight: '2px solid white',paddingBottom:'5%'}}>Full Stack Web Developer with experience in React.js, Python, and Flask-based programming. Combines a diverse background in teaching, management, sales, and sustainable design to bring a unique perspective to projects. Demonstrates excellent communication, team-building, and project management skills, driving impactful results that enhance the work environment and deliver exceptional outcomes.</p>
-      
-        </div>
         
-        
-        <div style={{ fontWeight: 'bold',textAlign:'center',backgroundColor:'black',borderTop:"white 3px solid" }} >
-         <p style={{ color: 'orange' }}>Individually Click the Headers to see the projects details </p><p style={{ color: 'orange' }}>or Use the Button to toggle </p>
-         <button onClick={toggleAll}>
-          {showAll ? (
-            <span style={{ color: 'red', borderRadius: '50%', width: '20px', height: '20px', display: 'inline-block', backgroundColor: 'red' }}></span>
-          ) : (
-            <span style={{ color: 'green', borderRadius: '50%', width: '20px', height: '20px', display: 'inline-block', backgroundColor: 'green' }}></span>
-          )}
-          &nbsp;{showAll ? 'Hide all' : 'Show all'}
-        </button>
-        
-          
+         <button onClick={toggleAll} class="relative" style={{ backgroundColor: "navy", display: 'flex',color: 'white', border: 'white 2px solid', borderRadius: '25%', padding: '1%', marginLeft: 'auto' }}>
+    {showAll ? (
+      <span style={{ color: 'red', borderRadius: '50%', width: '20px', height: '20px', display: 'inline-block', backgroundColor: 'red' }}></span>
+    ) : (
+      <span style={{ color: 'green', borderRadius: '50%', width: '20px', height: '20px', display: 'inline-block', backgroundColor: 'green' }}></span>
+    )}
+    &nbsp;{showAll ? 'Hide all' : 'Show all'}
+  </button>
+       <div style={{ fontWeight: 'bold', textAlign: 'center', backgroundColor: 'white', borderTop: 'white 3px solid', display: 'flex', justifyContent: 'center',flexStart:'center',marginLeft: marginADJ }}>
+ <p style={{ color: 'grey',flexStart:'center' }}>Individually Click the Headers to see the projects details or Use the Button to toggle</p></div>
+ 
 
 
 
 
 
 
-        </div>
-      <div id='midcft' className=" orp" onClick={toggleORP} style={{cursor:'pointer',marginTop:'0px'}} >
+
+      <div id='midcft' className="relative orp" onClick={toggleORP} style={{cursor:'pointer',marginTop:'0px', zIndex:'0',marginLeft: marginADJ }} >
         <h3 className="proT" >
-          - Off Record Picks -
+          - Off the Record Picks -
         </h3>
         <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://github.com/Duggan1/offRecord">Github</a>
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://offtherecordpicks.onrender.com/">Off Record Picks</a>
+        <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://offtherecordpicks.onrender.com/">Off the Record Picks</a>
         </div>
         { showORP && ( <>
            <div className="textC juan">
         <div className="textC juan">
-        <video
-        controls // Add controls for play, pause, and volume
-        style={{ borderRadius: '5%', width: '250px', height: '200px', border: 'purple 5px solid' }}
-      >
-        <source src={walkthruOTRP} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+       <center><video
+  controls
+  style={{
+    borderRadius: '5%',
+    width: '250px',
+    height: '200px',
+    border: 'purple 5px solid',
+    marginLeft: marginADJ, // Add your margin adjustment value here
+  }}
+  src={walkthruOTRP} // Make sure this contains the correct video URL
+  class='relative'
+>
+  <source src={walkthruOTRP} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+</center>
 </div>
 
             </div>
@@ -113,7 +166,7 @@ function Projects() {
 
 
 
-      <div id='midcft' className="exsect3 cft" onClick={toggleCFT} style={{cursor:'pointer'}} >
+      <div id='midcft' className="exsect3 relative cft" onClick={toggleCFT} style={{cursor:'pointer',marginLeft: marginADJ }} >
         <h3 className="proT" >
          - Chicago Fight Team -
         </h3>
@@ -126,13 +179,13 @@ function Projects() {
         </div>
         </div>
         {showCFT && (<>
-        <div className="textC juan"><iframe
+        <div className="textC juan"><center><iframe
           src="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac"
           frameBorder="0"
           allowFullScreen
           title="Chicago Fight Team Demo"
-          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'darkred 5px solid' }}
-        ></iframe></div>
+          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'darkred 5px solid',marginLeft: marginADJ }}
+        ></iframe></center></div>
       <div className="exsectP" style={{  paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>Developed a functional website allowing users to sign-up and pay for memberships for CFT’s two different gym locations.</p>
         <ul >
@@ -149,7 +202,7 @@ function Projects() {
       </div></>)}
 
 
-      <div id='midcft' className=" ttt" onClick={toggleTTT} style={{cursor:'pointer'}}>
+      <div id='midcft' className="relative  ttt" onClick={toggleTTT} style={{cursor:'pointer',marginLeft: marginADJ }}>
         <h3 className="proT">
           - Trish the Teacher -
         </h3>
@@ -170,7 +223,7 @@ function Projects() {
       </div>
       </>)}
 
-      <div className="exsect3 krt" onClick={toggleKRT} style={{cursor:'pointer'}} >
+      <div className="exsect3 relative  krt" onClick={toggleKRT} style={{cursor:'pointer',marginLeft: marginADJ }} >
         <h3 className="proT" >
           - KRT -
         </h3>
@@ -181,13 +234,13 @@ function Projects() {
         <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://krt-kitchen.onrender.com/">KRT-Kitchen</a>
         </div>
         {showKRT && (<>
-        <div className="textC juan"><iframe
+        <div className="textC juan"><center><iframe
           src="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0"
           frameBorder="0"
           allowFullScreen
           title="KRT-Kitchen Demo"
-          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'yellow 5px solid' }}
-        ></iframe></div>
+          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'yellow 5px solid',marginLeft: marginADJ }}
+        ></iframe></center></div>
           <div className="exsectP" style={{ paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>A dynamic, Full Stack restaurant website enabling users to browse menus, explore locations, and leave reviews.</p>
         <ul>
@@ -200,7 +253,7 @@ function Projects() {
 
 
 
-      <div className="exsect3 rbg"onClick={toggleRBG}style={{cursor:'pointer'}} >
+      <div className="exsect3 relative  rbg"onClick={toggleRBG}style={{cursor:'pointer',marginLeft: marginADJ }} >
         <h3 className="proT">
           - Recipe Box -
         </h3>
@@ -209,13 +262,14 @@ function Projects() {
         <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69">Demo</a>
         </div>
         {showRBG && (<>
-        <div className="textC juan"><iframe
+        <div className="textC juan"><center><iframe
           src="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69"
           frameBorder="0"
+          
           allowFullScreen
           title="Recipe Box Demo"
-          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'lightblue 5px solid' }}
-        ></iframe></div>
+          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'lightblue 5px solid',marginLeft: marginADJ }}
+        ></iframe></center></div>
       <div className="exsectP" style={{  paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>An app that allows users to virtually store and access popular recipes.</p>
         <ul>
@@ -228,7 +282,18 @@ function Projects() {
 
 
 
+      <div className='proSect'>
 
+      
+      <div className="juan2">
+      <h2 style={{ fontWeight: 'bolder',textShadow: '0 0 15px black',color:'lightblue'}} className="exsect3 juan">COMPUTER SOFTWARE ENGINEER </h2>
+      <h2 className="exsect3 "  style={{ fontWeight: 'bolder',textShadow: '0 0 15px black',color:'lightblue'}}>TECHNICAL SKILLS</h2>
+      <p className="exsectSK" style={{ fontWeight: '',textAlign:'center' }}>Flask, Python, SQLalchemy, PostgreSQL,
+      SQL, JavaScript, React, CSS, HTML, Node, Tailwind,
+      Restful API, Git, Stripe, Redux, JSON</p></div>
+      <p className="exsectP" style={{textAlign:'center',textShadow: '0 0 15px black',backgroundColor:'rgb(2, 2, 31)',marginLeft:'0%',borderTop: '2px solid white',borderRight: '2px solid white',paddingBottom:'5%'}}>Full Stack Web Developer with experience in React.js, Python, and Flask-based programming. Combines a diverse background in teaching, management, sales, and sustainable design to bring a unique perspective to projects. Demonstrates excellent communication, team-building, and project management skills, driving impactful results that enhance the work environment and deliver exceptional outcomes.</p>
+      
+        </div>
 
 
     </div>

@@ -1,4 +1,4 @@
-function Footer() {
+function Footer({marginADJ}) {
 
     const handleLClick = () => {
         window.open("https://www.linkedin.com/in/kevin-duggan-420624164/", "_blank");
@@ -12,13 +12,13 @@ function Footer() {
     
     
     return (
-        <div className="foot ">
+        <div style={{marginLeft:marginADJ}} className="foot ">
             
             <h1 className="footH" >Kevin Thomas Duggan </h1>
         <div style={{ display:'flex', justifyContent: 'center' }} id='icons' >
-        <div className="icon1"onClick={handleRClick} id='resume'></div>
-        <div className="icon2" onClick={handleLClick} style={{}} id='linkedin'></div>
-        <div className="icon3" onClick={handleGClick}  id='github'></div>
+        <div className="icon1 relative "onClick={handleRClick} id='resume'></div>
+        <div className="icon2 relative" onClick={handleLClick} style={{}} id='linkedin'></div>
+        <div className="icon3 relative" onClick={handleGClick}  id='github'></div>
         </div>
         <h3  style={{ textAlign:'center', fontFamily:'monospace' }}>Oak Lawn, Illinois | 708-280-0622 | kevinduggan95@gmail.com </h3>
         
