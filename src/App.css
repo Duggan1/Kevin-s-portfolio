@@ -348,12 +348,18 @@ html {
 .krt {
   background-color: yellow;
   color:black;
+  text-align: center;
   
 }
 .rbg {
   background-color: lightblue;
   color:black;
-  
+  text-align: center;
+}
+.homeBorder {
+  border-top: black 15px  solid;
+  border-bottom: black 15px  solid;
+  border-radius: 10%;
 }
 
 .newProHome {
@@ -381,7 +387,7 @@ html {
     font-size: 60px;
   }
   .juan2 {
-    border: solid orange 3px;
+    border: solid navy 3px;
     border-radius: 90%;
     background-color: black;
     padding: 10%;
@@ -425,7 +431,7 @@ html {
     border-radius: 25%;
     width: 80%;
     height: 250px;
-    border: orange 5px solid;
+    border: navy 5px solid;
     margin-top: 5%;
     margin-right: 15%;
   }

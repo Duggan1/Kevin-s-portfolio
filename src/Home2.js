@@ -21,10 +21,10 @@ function Home2() {
 
     const toggleML = () => {
         if (isMobileMenuOpen){
-            setML("316px");
+            setML("");
         }
         if (!isMobileMenuOpen){
-            setML("0%");
+            setML("relative");
         }
         
   console.log(ML)
@@ -88,7 +88,9 @@ return (
 //     <body class="h-full">
 //     ```
 //   -->
-  <div style={{border:'grey 3px solid'}}>
+  <div 
+//   style={{border:'grey 3px solid'}}
+  >
     {/* <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. --> */}
     <div class=" z-50 lg:hidden" role="dialog" aria-modal="false"
     //  style={{border:'pink 13px solid'}}
@@ -103,7 +105,9 @@ return (
           From: "opacity-100"
           To: "opacity-0"
       --> */}
-      <div class="fixed inset-0 " style={{border:'white 3px solid'}}></div>
+      <div class="fixed inset-0 " 
+    //   style={{border:'white 3px solid'}}
+      ></div>
   
       <div class="fixed inset-0 flex" 
     //   style={{border:'purple 13px solid'}}
@@ -118,7 +122,7 @@ return (
             From: "translate-x-0"
             To: "-translate-x-full"
         --> */}
-        {isMobileMenuOpen ? <div class=" left-full top-0 flex w-16 justify-center pt-5"  style={{border:'orange 3px solid',height:'7%'}}>
+        {isMobileMenuOpen ? <div class=" left-full top-0 flex w-16 justify-center pt-5"  style={{border:'lightblue 5px solid',height:'7%', backgroundColor:'',color:'lightblue', borderRadius:'20%', fontFamily:'bolder' }}>
             <button  onClick={() => {
   toggleMobileMenu();
   toggleML();
@@ -131,7 +135,9 @@ return (
             </button>
             
           </div> :
-        <div id="redBorderDiv" class="relative  z-50 mr-16 flex w-full max-w-xs flex-1" style={{border:'red 3px solid',}}>
+        <div id="redBorderDiv" class="relative  z-50 mr-16 flex w-full max-w-xs flex-1"
+        //  style={{border:'red 3px solid',}}
+         >
           {/* <!--
             Close button, show/hide based on off-canvas menu state.
   
@@ -321,7 +327,9 @@ return (
     </div>
   
     {/* <!-- Static sidebar for desktop --> */}
-    <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col" style={{border:'blue 3px solid'}}>
+    <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col" 
+    // style={{border:'blue 3px solid'}}
+    >
       {/* <!-- Sidebar component, swap this element with another sidebar if you like --> */}
       <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6">
         <div class="flex h-16 shrink-0 items-center">
@@ -507,7 +515,9 @@ return (
       </a>
     </div>
    */}
-    <main class="py-10 lg:pl-72" style={{border:'white 3px solid'}}>
+    <main class="py-10 lg:pl-72" 
+    // style={{border:'white 3px solid'}}
+    >
     {content}
 
     <Footer marginADJ={ML} ></Footer>

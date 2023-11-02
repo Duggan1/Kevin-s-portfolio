@@ -11,8 +11,8 @@ function Footer({marginADJ}) {
       }
     
     
-    return (
-        <div style={{marginLeft:marginADJ}} className="foot ">
+    return (<div>
+         { marginADJ ? <div style={{}} className="foot ">
             
             <h1 className="footH" >Kevin Thomas Duggan </h1>
         <div style={{ display:'flex', justifyContent: 'center' }} id='icons' >
@@ -23,7 +23,7 @@ function Footer({marginADJ}) {
         <h3  style={{ textAlign:'center', fontFamily:'monospace' }}>Oak Lawn, Illinois | 708-280-0622 | kevinduggan95@gmail.com </h3>
         
 
-        </div>
+        </div> : null}</div>
         );
 }
 

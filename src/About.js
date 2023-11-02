@@ -3,8 +3,8 @@
 function About({marginADJ}) {
     return (
         <>
-      <div style={{backgroundColor:'black'}}>
-      <h1 className='exsect3 bigGuy font-size-55px juan' >About Kevin</h1>
+      <div style={{backgroundColor:'rgb(2, 2, 31)'}}>
+      <h1 className='exsect3 bigGuy font-size-55px ' >About Kevin</h1>
         {/* <h2 className='exsect3' style={{color:'white'}}></h2> */}
         
       </div>
@@ -31,20 +31,20 @@ Today, I'm an enthusiastic software engineer, eager to contribute my skills and 
 When I'm not coding, you can find me exploring new martial arts techniques, enjoying a good cup of coffee at a local cafe, or immersing myself in the latest technology trends. I'm always up for a challenge and ready to take on new opportunities in the ever-evolving world of software engineering.
 
 Let's connect and embark on this exciting coding journey together!</p>
-<div>
+<center>
 <iframe width="560" height="315"
  src="https://www.youtube.com/embed/tdDCfCLTRGw"
   frameborder="0"
    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
-    className="akavid relative"
+    className={`akavid ${marginADJ}`} 
     style={{
-      marginLeft: marginADJ === "0%" ? "20%" : marginADJ,
-      width: '50%',
+      // marginLeft: marginADJ === "0%" ? "20%" : marginADJ,
+      width: '80%',
       justifyContent: 'center'
     }}
     
-    ></iframe></div>
+    ></iframe></center>
       </>
     );
   }

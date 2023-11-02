@@ -102,10 +102,10 @@ function Projects({projectON, marginADJ }) {
   return (
     <div style={{ backgroundColor: "rgb(2, 2, 31)"}}>
       <div style={{backgroundColor:'gb(2, 2, 31)'}}>
-      <h1 className='exsect3 bigGuy font-size-55px juan'>My Projects</h1></div>
+      <h1 className='exsect3 bigGuy font-size-55px '>My Projects</h1></div>
       
         
-         <button onClick={toggleAll} class="relative" style={{ backgroundColor: "navy", display: 'flex',color: 'white', border: 'white 2px solid', borderRadius: '25%', padding: '1%', marginLeft: 'auto' }}>
+         <button onClick={toggleAll} className={` ${marginADJ}`}  style={{ backgroundColor: "navy", display: 'flex',color: 'white', border: 'white 2px solid', borderRadius: '25%', padding: '1%', marginLeft: 'auto' }}>
     {showAll ? (
       <span style={{ color: 'red', borderRadius: '50%', width: '20px', height: '20px', display: 'inline-block', backgroundColor: 'red' }}></span>
     ) : (
@@ -113,7 +113,9 @@ function Projects({projectON, marginADJ }) {
     )}
     &nbsp;{showAll ? 'Hide all' : 'Show all'}
   </button>
-       <div style={{ fontWeight: 'bold', textAlign: 'center', backgroundColor: 'white', borderTop: 'white 3px solid', display: 'flex', justifyContent: 'center',flexStart:'center',marginLeft: marginADJ }}>
+       <div style={{ fontWeight: 'bold', textAlign: 'center', backgroundColor: 'white', borderTop: 'white 3px solid', display: 'flex', justifyContent: 'center',
+       flexStart:'center',
+       }}>
  <p style={{ color: 'grey',flexStart:'center' }}>Individually Click the Headers to see the projects details or Use the Button to toggle</p></div>
  
 
@@ -123,7 +125,7 @@ function Projects({projectON, marginADJ }) {
 
 
 
-      <div id='midcft' className="relative orp" onClick={toggleORP} style={{cursor:'pointer',marginTop:'0px', zIndex:'0',marginLeft: marginADJ }} >
+      <div id='midcft' className={`orp ${marginADJ}`} onClick={toggleORP} style={{cursor:'pointer',marginTop:'0px', zIndex:'0', }} >
         <h3 className="proT" >
           - Off the Record Picks -
         </h3>
@@ -131,21 +133,21 @@ function Projects({projectON, marginADJ }) {
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
         <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://offtherecordpicks.onrender.com/">Off the Record Picks</a>
         </div>
-        { showORP && ( <>
+        { showORP  && ( <>
            <div className="textC juan">
         <div className="textC juan">
        <center><video
-  controls
-  style={{
-    borderRadius: '5%',
-    width: '250px',
-    height: '200px',
-    border: 'purple 5px solid',
-    marginLeft: marginADJ, // Add your margin adjustment value here
-  }}
-  src={walkthruOTRP} // Make sure this contains the correct video URL
-  class='relative'
->
+       controls={marginADJ}
+          style={{
+            borderRadius: '5%',
+            width: '250px',
+            height: '200px',
+            border: 'purple 5px solid',
+            
+          }}
+          src={walkthruOTRP} // Make sure this contains the correct video URL
+          class={`${marginADJ}`}
+        >
   <source src={walkthruOTRP} type="video/mp4" />
   Your browser does not support the video tag.
 </video>
@@ -166,7 +168,7 @@ function Projects({projectON, marginADJ }) {
 
 
 
-      <div id='midcft' className="exsect3 relative cft" onClick={toggleCFT} style={{cursor:'pointer',marginLeft: marginADJ }} >
+      <div id='midcft' className={`exsect3  cft ${marginADJ}`} onClick={toggleCFT} style={{cursor:'pointer', }} >
         <h3 className="proT" >
          - Chicago Fight Team -
         </h3>
@@ -178,13 +180,13 @@ function Projects({projectON, marginADJ }) {
         <a className="proA" style={{color:'black',textShadow: '0 0 15px white',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
         </div>
         </div>
-        {showCFT && (<>
+        {showCFT &&  (<>
         <div className="textC juan"><center><iframe
           src="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac"
           frameBorder="0"
           allowFullScreen
           title="Chicago Fight Team Demo"
-          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'darkred 5px solid',marginLeft: marginADJ }}
+          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'darkred 5px solid',  }}
         ></iframe></center></div>
       <div className="exsectP" style={{  paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>Developed a functional website allowing users to sign-up and pay for memberships for CFT’s two different gym locations.</p>
@@ -202,7 +204,7 @@ function Projects({projectON, marginADJ }) {
       </div></>)}
 
 
-      <div id='midcft' className="relative  ttt" onClick={toggleTTT} style={{cursor:'pointer',marginLeft: marginADJ }}>
+      <div id='midcft' className={`ttt ${marginADJ}`} onClick={toggleTTT} style={{cursor:'pointer',marginLeft: marginADJ }}>
         <h3 className="proT">
           - Trish the Teacher -
         </h3>
@@ -210,7 +212,7 @@ function Projects({projectON, marginADJ }) {
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
         <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://trishtheteacher.com/">TrishTheTeacher.com</a>
         </div>
-        {showTTT && (<>
+        {showTTT &&  (<>
         <div className="textC juan">
         </div>
          <div className="exsectP" style={{  paddingBottom: '50px' }}>
@@ -223,7 +225,7 @@ function Projects({projectON, marginADJ }) {
       </div>
       </>)}
 
-      <div className="exsect3 relative  krt" onClick={toggleKRT} style={{cursor:'pointer',marginLeft: marginADJ }} >
+      <div  className={`krt ${marginADJ}`} onClick={toggleKRT} style={{cursor:'pointer' }} >
         <h3 className="proT" >
           - KRT -
         </h3>
@@ -233,13 +235,13 @@ function Projects({projectON, marginADJ }) {
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
         <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://krt-kitchen.onrender.com/">KRT-Kitchen</a>
         </div>
-        {showKRT && (<>
+        {showKRT &&   (<>
         <div className="textC juan"><center><iframe
           src="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0"
           frameBorder="0"
           allowFullScreen
           title="KRT-Kitchen Demo"
-          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'yellow 5px solid',marginLeft: marginADJ }}
+          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'yellow 5px solid', }}
         ></iframe></center></div>
           <div className="exsectP" style={{ paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>A dynamic, Full Stack restaurant website enabling users to browse menus, explore locations, and leave reviews.</p>
@@ -253,7 +255,7 @@ function Projects({projectON, marginADJ }) {
 
 
 
-      <div className="exsect3 relative  rbg"onClick={toggleRBG}style={{cursor:'pointer',marginLeft: marginADJ }} >
+      <div className={`rbg ${marginADJ}`}   onClick={toggleRBG}style={{cursor:'pointer', }} >
         <h3 className="proT">
           - Recipe Box -
         </h3>
@@ -261,14 +263,14 @@ function Projects({projectON, marginADJ }) {
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
         <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69">Demo</a>
         </div>
-        {showRBG && (<>
+        {showRBG &&    (<>
         <div className="textC juan"><center><iframe
           src="https://www.loom.com/embed/0a472f2e032544c9949de200888d9f69"
           frameBorder="0"
           
           allowFullScreen
           title="Recipe Box Demo"
-          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'lightblue 5px solid',marginLeft: marginADJ }}
+          style={{ borderRadius: '5%', width: '250px', height: '150px', border: 'lightblue 5px solid'}}
         ></iframe></center></div>
       <div className="exsectP" style={{  paddingBottom: '50px' }}>
         <p style={{ fontWeight: 'bold' }}>An app that allows users to virtually store and access popular recipes.</p>

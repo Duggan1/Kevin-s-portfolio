@@ -15,22 +15,50 @@ function Home({marginADJ}) {
   const handleNewProClick = () => {
     window.open("https://offtherecordpicks.onrender.com", "_blank");
   }
-  
+  console.log(marginADJ)
 
   return (
-    <div className='home2' style={{marginLeft: marginADJ}}>
-    <div style={{backgroundColor:'black'}}>
-    <h1 className='exsect3 bigGuy font-size-55px juan' >Kevin Duggan</h1></div>
-    <h1 className='juan font-size-20px' style={{textAlign:'center',textShadow: '0 0 15px black',}}>Full Stack Engineer</h1>
-    <h1 className='juan font-size-25px' style={{textAlign:'center',textShadow: '0 0 15px black',}}>Kevin Thomas Duggan</h1>
-    
-    <div style={{display: 'flex', justifyContent: 'center'}}>
-      <div style={{ height: '200px',display: 'flex', justifyContent: 'center'}}className="kevo"></div>
-      <div style={{ height: '200px',display: 'flex', justifyContent: 'center'}} className="kevio"></div></div>
+    <div className='home2' style={{}}>
+    <div style={{backgroundColor:'rgb(2, 2, 31)'}}>
+    <h1 className='exsect3 bigGuy font-size-55px ' >Kevin Duggan</h1></div>
+   
+    <h1 className='juan font-size-25px' style={{ textAlign:'center', marginTop:'5%' }}>
+    <span style={{ background: 'black', color: 'white', padding: '5px', fontWeight: 'bold', textShadow: '0 0 15px black',textDecoration: 'underline' }}>
+        Full Stack Engineer
+    </span>
+</h1>
+    <h1 className='juan font-size-25px' style={{ textAlign:'center' }}>
+    <span style={{ background: 'black', color: 'white', padding: '5px', fontWeight: 'bold', textShadow: '0 0 15px black',borderBottom:'black 25px solid' }}>
+        Kevin Thomas Duggan
+    </span>
+</h1>
+
+ 
+<div style={{ display: 'flex', justifyContent: 'center',  }}>
+<div
+  style={{
+    height: '235px',
+    display: 'flex',
+    justifyContent: 'center',
+    borderLeft: 'black 10px solid',
+    borderRight: 'black 1px solid',
+    zIndex: marginADJ ? '1' : 'initial', // Set zIndex conditionally
+  }}
+  className="kevo homeBorder"
+></div>
+
+      <div style={{ height: '235px',display: 'flex', justifyContent: 'center',borderRight:'black 10px solid',borderLeft:'black 1px solid', zIndex: marginADJ ? '1' : 'initial', }} className="kevio homeBorder"></div></div>
       <div style={{ textAlign: 'center' }}>
+
+      
+    <h1 className='juan font-size-25px' style={{ textAlign:'center' }}>
+          <span style={{ background: 'black', color: 'white', padding: '5px', fontWeight: 'bold', textShadow: '0 0 13px black',borderTop: marginADJ ? '1' : 'initial',  zIndex:'-1' }}>
+          Introduce Myself ?
+          </span>
+      </h1>
         
-        <h4 className='juan' style={{fontWeight:'bolder'}}>Introduce Myself ?</h4>
-        <div style={{ display: 'inline-block'}}className="custom-checkbox adjborder">
+        {marginADJ ?
+         <div style={{ display: 'inline-block'}}className="custom-checkbox adjborder">
           <input
             id="status"
             type="checkbox"
@@ -45,7 +73,9 @@ function Home({marginADJ}) {
               data-checked="No"
             ></div>
           </label>
-        </div><br></br>
+        </div> 
+         : null}
+        <br></br>
         {showVideo && (<center>
           <iframe 
             src="https://www.loom.com/embed/a5e33ab39fb040bea9ed716f4ac4fc9f?sid=c706cf97-5b76-43cc-a3f2-e264e8b4530f"
@@ -53,7 +83,7 @@ function Home({marginADJ}) {
             allowFullScreen
             title="kevin"
             
-            className='amtri relative'
+            className={`amtri ${marginADJ}`}
           ></iframe></center>
         )}
         <h2 style={{ marginBottom: '-1%' }}className='juan font-size-25px'>Computer</h2>
@@ -66,7 +96,7 @@ function Home({marginADJ}) {
         padding :'1%',
         fontWeight:'bold'
       }}
-         className='juan relative'
+         className={`juan ${marginADJ}`}
          onClick={togglelatestProject}>
   {latestProject ? 'Hide Most Recent Work' : 'View Most Recent Work'}
 </button>
@@ -76,7 +106,7 @@ function Home({marginADJ}) {
       
      
 
-      { latestProject ?
+      { latestProject && marginADJ ?
       <div className="textC juan">
         <label style={{padding:'0px 2%'}}
         className='newProHome relative'
