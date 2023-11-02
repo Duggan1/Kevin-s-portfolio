@@ -86,8 +86,17 @@ function Home({marginADJ}) {
             className={`amtri ${marginADJ}`}
           ></iframe></center>
         )}
-        <h2 style={{ marginBottom: '-1%' }}className='juan font-size-25px'>Computer</h2>
-        <h2 className='juan font-size-20px'> Software Engineer</h2>
+        {/* <h2 style={{ marginBottom: '-1%' }}className='juan font-size-25px'>Computer</h2>
+        <h2 className='juan font-size-20px'> Software Engineer</h2> */}
+        <h1 className='juan font-size-25px' style={{ textAlign:'center' }}>
+          <span style={{ background: 'black', color: 'white', padding: '5px', fontWeight: 'bold', textShadow: '0 0 13px black',borderTop: marginADJ ? '1' : 'initial',  zIndex:'-1' }}>
+          Computer
+          </span>
+      </h1><h1 className='juan font-size-25px' style={{ textAlign:'center' }}>
+          <span style={{ background: 'black', color: 'white', padding: '5px', fontWeight: 'bold', textShadow: '0 0 13px black',borderTop: marginADJ ? '1' : 'initial',  zIndex:'-1' }}>
+          Software Engineer
+          </span>
+      </h1>
         
         <button  style={{backgroundColor:"navy",
         color:'white',

@@ -4,6 +4,7 @@ import Home from './Home';
 import Projects from './Projects';
 import Experience from './Experience';
 import About from './About';
+import FooterDash from './FooterDash';
 
 
 function Home2() {
@@ -17,8 +18,7 @@ function Home2() {
 
 
     };
-    const [ML, setML] = useState('0%');
-
+    const [ML, setML] = useState(isMobileMenuOpen ? "relative" : "");
     const toggleML = () => {
         if (isMobileMenuOpen){
             setML("");
@@ -26,9 +26,13 @@ function Home2() {
         if (!isMobileMenuOpen){
             setML("relative");
         }
-        
   console.log(ML)
       };
+
+    
+    
+    
+
     const handleLClick = () => {
         window.open("https://www.linkedin.com/in/kevin-duggan-420624164/", "_blank");
       }
@@ -239,7 +243,7 @@ return (
                         Reports
                     </a>
                     </li> */}
-                    <div class="text-xs font-semibold leading-6 text-gray-400">Kevin's External Links</div>
+                    {/* <div class="text-xs font-semibold leading-6 text-gray-400">Kevin's External Links</div>
                     <li onClick={handleLClick}>
                     <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -255,13 +259,13 @@ return (
                         </svg>
                         Github 
                     </a>
-                    </li>
+                    </li> */}
                 </ul>
                 </li>
                 <li>
                 <div class="text-xs font-semibold leading-6 text-gray-400">Kevin's Projects</div>
                 <ul role="list" class="-mx-2 mt-2 space-y-1">
-                <li onClick={() => {
+                    <li onClick={() => {
                             setProjectON(1);
                             setPage("Projects");
                             }}>
@@ -317,6 +321,11 @@ return (
                     <span aria-hidden="true">Chicago, IL, USA </span>
                 </a>
                 {/* <Footer/>  */}
+                </li>
+
+                <li class="-mx-6 mt-auto">
+               
+                <FooterDash/> 
                 </li>
             </ul>
             </nav>
@@ -487,14 +496,14 @@ return (
               </ul>
             </li>
             
-            <li class="-mx-6 mt-auto">
+            <li  class="-mx-6 mt-auto">
               <a href="#" class="flex items-center gap-x-4 px-6 py-3 text-sm font-semibold leading-6 text-white ">
                 <img class="h-8 w-8 rounded-full bg-gray-800" 
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWq3sbqmqNc-nj1D2ciLrSEXVfSFoyGytFTDzZLhLTE4-SIg1qdk-EWxXGv0MPb0vW7Ow&usqp=CAU" alt=""></img>
                 <span class="sr-only">Your profile</span>
                 <span aria-hidden="true">Chicago, IL, USA </span>
               </a>
-              {/* <Footer/>  */}
+              {/* <FooterDash/>  */}
             </li>
           </ul>
         </nav>
