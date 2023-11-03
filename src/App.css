@@ -356,7 +356,7 @@ html {
 .cft {
   background-color: darkred;
   color:white;
-  /* padding-right: 200px; */
+  text-align: center;
   
   
 }
@@ -458,7 +458,7 @@ html {
     margin-right: 15%;
   }
   #midcft {
-    padding-right: 20%;
+    /* padding-right: 20%; */
 
   }
   

@@ -81,6 +81,15 @@ function Projects({projectON, marginADJ }) {
     setShowRBG(true)
     setprojectONE(0)
   }
+  if (projectONE === 6 ) {
+    setShowRBG(false)
+    setShowORP(false)
+    setShowCFT(false)
+    setShowTTT(false)
+    setShowKRT(false)
+    
+    setprojectONE(0)
+  }
 
   const [showAll, setShowAll] = useState(false);
   const toggleAll = () => {
@@ -168,7 +177,7 @@ function Projects({projectON, marginADJ }) {
 
 
 
-      <div id='midcft' className={`exsect3  cft ${marginADJ}`} onClick={toggleCFT} style={{cursor:'pointer', }} >
+      <div id='midcft' className={` cft ${marginADJ}`} onClick={toggleCFT} style={{cursor:'pointer', }} >
         <h3 className="proT" >
          - Chicago Fight Team -
         </h3>

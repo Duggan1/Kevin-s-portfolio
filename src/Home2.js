@@ -134,16 +134,15 @@ return (
   toggleMobileMenu();
   toggleML();
 }} type="button" class="-m-2.5 p-2.5">
-              {/* <span class="sr-only">Close sidebar</span> */}
-              {/* <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg> */}
-              ->
+             <span class="sr-only">Open sidebar</span>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
             </button>
             
           </div> :
         <div id="redBorderDiv" class="relative  z-50 mr-16 flex w-full max-w-xs flex-1"
-        //  style={{border:'red 3px solid',}}
+         style={{border:'red 3px solid',}}
          >
           {/* <!--
             Close button, show/hide based on off-canvas menu state.
@@ -195,7 +194,9 @@ return (
                         {/* <Footer/>  */}
                         </li>
 
-                    <li onClick={() => setPage("Home")}>
+                    <li onClick={() => {setPage("Home");
+                toggleMobileMenu();
+                toggleML()}}>
                       {/* <!-- Current: "bg-gray-800 text-white", Default: "text-gray-400 hover:text-white hover:bg-gray-800" --> */}
                       <a href="#" class={`${ page === "Home" ? 'bg-gray-800' : 'text-gray-400' } hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold`}>
 
@@ -205,7 +206,9 @@ return (
                         Home Page
                       </a>
                     </li>
-                    <li onClick={() => setPage("About")}>
+                    <li onClick={() => {setPage("About");
+                toggleMobileMenu();
+                toggleML()}}>
                     <a href="#" class={`${ page === "About" ? 'bg-gray-800' : 'text-gray-400' } hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold`}>
                     <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
@@ -213,7 +216,12 @@ return (
                     About 
                   </a>
                 </li>
-                   <li onClick={() => setPage("Projects")}>
+                   <li onClick={() => {
+                    setProjectON(6);
+                    setPage("Projects");
+                    toggleMobileMenu();
+                    toggleML()
+                }}>
                    <a href="#" class={`${ page === "Projects" ? 'bg-gray-800' : 'text-gray-400' } hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold`}>
                     <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
@@ -221,7 +229,9 @@ return (
                     Projects
                   </a>
                     </li>
-                    <li onClick={() => setPage("Experience")}>
+                    <li onClick={() => {setPage("Experience");
+                toggleMobileMenu();
+                toggleML()}}>
                     <a href="#" class={`${ page === "Experience" ? 'bg-gray-800' : 'text-gray-400' } hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold`}>
                         <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
@@ -229,7 +239,9 @@ return (
                         Experience
                     </a>
                     </li>
-                    <li onClick={() => setPage("Docs")}>
+                    <li onClick={() => {setPage("Docs");
+                toggleMobileMenu();
+                toggleML()}}>
                     <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
@@ -271,6 +283,8 @@ return (
                     <li onClick={() => {
                             setProjectON(1);
                             setPage("Projects");
+                            toggleMobileMenu();
+                            toggleML()
                             }}>
                     {/* <!-- Current: "bg-gray-800 text-white", Default: "text-gray-400 hover:text-white hover:bg-gray-800" --> */}
                     <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
@@ -281,6 +295,8 @@ return (
                     <li onClick={() => {
                         setProjectON(2);
                         setPage("Projects");
+                        toggleMobileMenu();
+                        toggleML()
                         }}>
                     <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">CFT</span>
@@ -290,6 +306,8 @@ return (
                     <li onClick={() => {
                         setProjectON(3);
                         setPage("Projects");
+                        toggleMobileMenu();
+                        toggleML()
                         }}>
                     <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">TT</span>
@@ -299,6 +317,8 @@ return (
                     <li onClick={() => {
                         setProjectON(4);
                         setPage("Projects");
+                        toggleMobileMenu();
+                        toggleML()
                         }}>
                     <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">KRT</span>
@@ -308,6 +328,8 @@ return (
                     <li onClick={() => {
                         setProjectON(5);
                         setPage("Projects");
+                        toggleMobileMenu();
+                        toggleML()
                         }}>
                     <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">RB</span>
@@ -393,7 +415,10 @@ return (
                     About 
                   </a>
                 </li>
-                <li onClick={() => setPage("Projects")}>
+                <li onClick={() => {
+                    setProjectON(6);
+                    setPage("Projects");
+                    }}>
                 <a href="#" class={`${ page === "Projects" ? 'bg-gray-800' : 'text-gray-400' } hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold`}>
 
                     <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
