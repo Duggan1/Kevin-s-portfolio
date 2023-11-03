@@ -301,7 +301,29 @@ html {
   cursor: pointer;
   
 }
+.navbutton {
+  color: rgb(2, 2, 31);
+  background-color: orange;
+  height: 10%;
+  border-radius: 25%;
+  border: 10px rgb(2, 2, 31) solid ;
+  padding:'5%';
+  font-size: bolder ;
+}
+.cert  {
+  background-image: url("./cert1.png ");
+	background-repeat: no-repeat;
+	background-size: cover;
+  /* background-color: blue; */
 
+}
+.respic  {
+  background-image: url("./respre.png ");
+	background-repeat: no-repeat;
+	background-size: cover;
+  /* background-color: blue; */
+
+}
 .bigGuy {
   font-weight: bolder;
   font-size: 90px;

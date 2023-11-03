@@ -5,6 +5,7 @@ import Projects from './Projects';
 import Experience from './Experience';
 import About from './About';
 import FooterDash from './FooterDash';
+import Docs from './Docs';
 
 
 function Home2() {
@@ -50,7 +51,9 @@ function Home2() {
     content = <Experience marginADJ={ML} />;
     } else if (page === 'Projects') {
     content = <Projects marginADJ={ML} projectON={projectON} />;
-    }
+    } else if (page === 'Docs') {
+        content = <Docs marginADJ={ML} projectON={projectON} />;
+        }
 
 
     function calculateRedBorderWidth() {
@@ -126,7 +129,7 @@ return (
             From: "translate-x-0"
             To: "-translate-x-full"
         --> */}
-        {isMobileMenuOpen ? <div class=" left-full top-0 flex w-16 justify-center pt-5"  style={{border:'lightblue 5px solid',height:'7%', backgroundColor:'',color:'lightblue', borderRadius:'20%', fontFamily:'bolder' }}>
+        {isMobileMenuOpen ? <div class="  left-full top-0 flex w-16 justify-center  navbutton"  style={{}}>
             <button  onClick={() => {
   toggleMobileMenu();
   toggleML();
@@ -152,10 +155,10 @@ return (
               From: "opacity-100"
               To: "opacity-0"
           --> */}
-          <div class="absolute z-50 top-0 flex w-16 justify-center p-5"  style={{border:'lightblue 3px solid',zIndex:'50',marginLeft:'250px'}}>
+          <div class="absolute left-full top-0 flex w-16 justify-center  navbutton"  style={{}}>
             <button  onClick={toggleMobileMenu} type="button" class="-m-2.5 p-2.5">
               <span class="sr-only">Close sidebar</span>
-              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <svg class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
@@ -226,7 +229,7 @@ return (
                         Experience
                     </a>
                     </li>
-                    <li>
+                    <li onClick={() => setPage("Docs")}>
                     <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
@@ -408,7 +411,7 @@ return (
                     Experience
                   </a>
                 </li>
-                <li>
+                <li onClick={() => setPage("Docs")}>
                 <a href="#" class={`${ page === "Documents" ? 'bg-gray-800' : 'text-gray-400' } hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold`}>
 
                     <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
