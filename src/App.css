@@ -74,6 +74,11 @@ html {
   border-radius: 25%;
   color: white;
 } */
+.Dlogo {
+ background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Eo_circle_orange_letter-d.svg/1200px-Eo_circle_orange_letter-d.svg.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
 .kevo {
 	max-width: 100%;
   min-width: 200px;
@@ -94,6 +99,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     }
+
     .kevio2 {
       /* max-width: 100%;
       min-width: 200px;
@@ -453,9 +459,10 @@ html {
     border-radius: 25%;
     width: 80%;
     height: 250px;
-    border: navy 5px solid;
+    border: rgb(2, 2, 31) 5px solid;
     margin-top: 5%;
-    margin-right: 15%;
+    
+    
   }
   #midcft {
     /* padding-right: 20%; */

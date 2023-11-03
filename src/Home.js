@@ -52,7 +52,7 @@ function Home({marginADJ}) {
 
       
     <h1 className='juan font-size-25px' style={{ textAlign:'center' }}>
-          <span style={{ background: 'black', color: 'white', padding: '5px', fontWeight: 'bold', textShadow: '0 0 13px black',borderTop: marginADJ ? '1' : 'initial',  zIndex:'-1' }}>
+          <span style={{ background: 'black', color: 'white', padding: '5px', fontWeight: 'bold', textShadow: '0 0 13px black',borderTop: 'black 13px solid',  zIndex:'-1' }}>
           Introduce Myself ?
           </span>
       </h1>

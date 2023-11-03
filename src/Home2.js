@@ -142,7 +142,7 @@ return (
             
           </div> :
         <div id="redBorderDiv" class="relative  z-50 mr-16 flex w-full max-w-xs flex-1"
-         style={{border:'red 3px solid',}}
+        //  style={{border:'red 3px solid',}}
          >
           {/* <!--
             Close button, show/hide based on off-canvas menu state.
