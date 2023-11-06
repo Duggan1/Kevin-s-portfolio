@@ -1,4 +1,24 @@
+import { useState, useEffect } from 'react';
+
 function Footer({marginADJ}) {
+
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+ const checkWindowSize = () => {
+   if (window.innerWidth < 1023) { // Adjust the breakpoint as needed
+     setIsMobile(true);
+   } else {
+     setIsMobile(false);
+   }
+ };
+
+ checkWindowSize();
+
+ window.addEventListener('resize', checkWindowSize);
+ return () => {
+   window.removeEventListener('resize', checkWindowSize);
+ };
+}, []);
 
     const handleLClick = () => {
         window.open("https://www.linkedin.com/in/kevin-duggan-420624164/", "_blank");
@@ -12,7 +32,7 @@ function Footer({marginADJ}) {
     
     
     return (<div>
-         { marginADJ ? <div style={{}} className="foot ">
+         { marginADJ || !isMobile ? <div style={{}} className="foot ">
             
             <h1 className="footH" >Kevin Thomas Duggan </h1>
         <div style={{ display:'flex', justifyContent: 'center' }} id='icons' >

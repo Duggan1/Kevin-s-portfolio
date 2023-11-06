@@ -330,6 +330,31 @@ html {
   /* background-color: blue; */
 
 }
+
+.ca1  {
+  background-image: url("./kdjs.png ");
+	background-repeat: no-repeat;
+	background-size: cover;
+  /* background-color: blue; */
+
+  
+}
+.ca2  {
+  background-image: url("./kdhtml.png ");
+	background-repeat: no-repeat;
+	background-size: cover;
+  /* background-color: blue; */
+
+  
+}
+.ca3  {
+  background-image: url("./kdcss.png ");
+	background-repeat: no-repeat;
+	background-size: cover;
+  /* background-color: blue; */
+
+  
+}
 .bigGuy {
   font-weight: bolder;
   font-size: 90px;
