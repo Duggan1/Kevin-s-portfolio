@@ -5,6 +5,7 @@ import { ExclamationTriangleIcon, XMarkIcon } from '@heroicons/react/24/outline'
 function Docs({ marginADJ }) {
   const [isMobile, setIsMobile] = useState(false);
   const [selectedDocument, setSelectedDocument] = useState(null);
+  const [selectedDetails, setSelectedDetails] = useState('Doc Details');
 
   useEffect(() => {
     const checkWindowSize = () => {
@@ -26,7 +27,12 @@ function Docs({ marginADJ }) {
   const handleRClick = (documentLink) => {
     setSelectedDocument(documentLink);
   };
-
+  const handleDClick = (documentDetails) => {
+    setSelectedDetails(documentDetails);
+  };
+  const handleResumeClick = () => {
+    window.open("https://docs.google.com/document/d/1m1uW6tSQ3suBAurwu5kaeojt2sDRwVAnyeWFuIVUPlY/edit?usp=sharing", "_blank");
+  }
   const closeDocumentModal = () => {
     setSelectedDocument(null);
   };
@@ -45,7 +51,15 @@ function Docs({ marginADJ }) {
       date: "2023",
       className: "cert",
       link: "cert",
-    },{
+    },
+    {
+        title: "Bachelor's Degree",
+        institution: "University of Illinois at Chicago",
+        date: "2018",
+        className: "cert2",
+        link: "cert2",
+      },
+      {
         title: "JavaScript Course Certificate",
         institution: "Codecademy",
         date: "2022",
@@ -69,13 +83,7 @@ function Docs({ marginADJ }) {
         link: "ca3",
 
       },
-    // {
-    //     title: "Bachelor's Degree",
-    //     institution: "University of Illinois at Chicago",
-    //     date: "2018",
-    //     className: "cert",
-    //     link: "cert",
-    //   },
+    
     // Add more documents as needed
   ];
 
@@ -90,7 +98,7 @@ function Docs({ marginADJ }) {
               <div key={index}>
                 <div className="relative">
                   <div className="relative h-72 w-full overflow-hidden rounded-lg">
-                    <div
+                    <div style={{border:"solid black 3px"}}
                       alt={document.title}
                       className={`h-full w-full object-cover object-center ${document.className}`}
                     >
@@ -113,7 +121,11 @@ function Docs({ marginADJ }) {
                 </div>
                 <div className="mt-6">
                   <a
-                    onClick={() => handleRClick(document.link)}
+                    onClick={() => {
+                        handleRClick(document.link);
+                        handleDClick(document.title);
+                      }}
+                      
                     className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200"
                   >
                     Open
@@ -172,7 +184,7 @@ function Docs({ marginADJ }) {
                     </div>
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                       <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                        Document Title
+                      {selectedDetails}
                       </Dialog.Title>
                       <div className="mt-2">
                         <iframe
@@ -193,6 +205,16 @@ function Docs({ marginADJ }) {
                     >
                       Close
                     </button>
+                    {selectedDetails == "Kevin Duggan's Resume" ? 
+                    <button
+                      type="button"
+                      className="inline-flex w-full justify-center rounded-md  px-3 py-2 text-sm font-semibold  shadow-sm hover:bg-green-500 sm:ml-3 sm:w-auto"
+                      onClick={handleResumeClick}
+                    >
+                      Open
+                    </button>:  null}
+
+
                   </div>
                 </Dialog.Panel>
               </Transition.Child>

@@ -168,7 +168,18 @@ html {
   
   line-height: 2.5;
   font-weight: bolder;
-}       
+}     
+.gooday {
+  text-decoration: underline;
+  font-weight: bolder;
+  color: blue;
+  background-color: aqua;
+  border-radius: 50%;
+  
+}  
+.longday {
+  margin-bottom: 15px;
+}
 .proA {
   display:;
   /* vertical-align: middle;  */
@@ -318,6 +329,14 @@ html {
 }
 .cert  {
   background-image: url("./cert1.png ");
+	background-repeat: no-repeat;
+	background-size: cover;
+  /* background-color: blue; */
+
+  
+}
+.cert2  {
+  background-image: url("./cert2.jpeg ");
 	background-repeat: no-repeat;
 	background-size: cover;
   /* background-color: blue; */
@@ -499,7 +518,7 @@ html {
     margin-top: -3%; */
     /* padding-bottom: 1%; */
     /* margin-right: 10%; */
-    padding-right: 10%;
+    /* padding-right: 10%; */
   }
   .akavid {
     width: 75%;

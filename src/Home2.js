@@ -11,7 +11,7 @@ import Docs from './Docs';
 function Home2() {
 
 
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
 
     const toggleMobileMenu = () => {
       setIsMobileMenuOpen(!isMobileMenuOpen);
