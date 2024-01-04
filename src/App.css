@@ -12,7 +12,7 @@ html {
   padding-right: 1%; /* Add desired padding */
 }
 .orp {
-  background-color: purple;
+  background: linear-gradient(to right, darkred 50%, navy 50%);
   color: white;
   text-align: center;
   /* padding-right: 150px; */
@@ -404,8 +404,8 @@ html {
   font-weight: bolder;
   }
 .cft {
-  background-color: darkred;
-  color:white;
+  background-color: black;
+  color:red;
   text-align: center;
   
   

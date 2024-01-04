@@ -136,11 +136,11 @@ function Projects({projectON, marginADJ }) {
 
       <div id='midcft' className={`orp ${marginADJ}`} onClick={toggleORP} style={{cursor:'pointer',marginTop:'0px', zIndex:'0', }} >
         <h3 className="proT" >
-          - Off the Record Picks -
+          - Picks 4 Points -
         </h3>
-        <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://github.com/Duggan1/offRecord">Github</a>
+        <a className="proA" style={{color:'white',cursor: 'pointer' }}  href="https://github.com/Duggan1/offRecord">Github</a>
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'gold',cursor: 'pointer' }}  href="https://offtherecordpicks.onrender.com/">Off the Record Picks</a>
+        <a className="proA" style={{color:'white',cursor: 'pointer' }}  href="https://picks4points.com/">Picks4points.com</a>
         </div>
         { showORP  && ( <>
            <div className="textC juan">
@@ -151,7 +151,10 @@ function Projects({projectON, marginADJ }) {
             borderRadius: '5%',
             width: '250px',
             height: '200px',
-            border: 'purple 5px solid',
+            borderTop: 'red solid 5px',
+  borderBottom: 'blue solid 5px',
+  borderRight: 'blue solid 5px',
+  borderLeft: 'red solid 5px',
             
           }}
           src={walkthruOTRP} // Make sure this contains the correct video URL
@@ -182,11 +185,11 @@ function Projects({projectON, marginADJ }) {
          - Chicago Fight Team -
         </h3>
         <div   >
-        <a className="proA" style={{color:'black',cursor: 'pointer',textShadow: '0 0 15px white' }} href="https://github.com/Duggan1/Project5-Project-cft">Github</a>
-        <p style={{ display: 'inline-block', marginBottom: '20px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'black',cursor: 'pointer',textShadow: '0 0 15px white' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
-        <p style={{ display: 'inline-block', marginBottom: '20px', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'black',textShadow: '0 0 15px white',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
+        <a className="proA" style={{color:'red',cursor: 'pointer',textShadow: '0 0 15px black' }} href="https://github.com/Duggan1/Project5-Project-cft">Github</a>
+        <p style={{ display: 'inline-block',color:'red',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
+        <a className="proA" style={{color:'red',cursor: 'pointer',textShadow: '0 0 15px black' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
+        <p style={{ display: 'inline-block',color:'red',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
+        <a className="proA" style={{color:'red',textShadow: '0 0 15px black',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
         </div>
         </div>
         {showCFT &&  (<>
