@@ -18,6 +18,9 @@ html {
   /* padding-right: 150px; */
 
 }
+.bg-ws{
+  background-color: whitesmoke;
+}
 .adjborder {
   border-top: black solid 5px;
   border-right: black solid 10px;

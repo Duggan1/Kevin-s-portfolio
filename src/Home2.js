@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Footer from './Footer';
 import Home from './Home';
+import Home3 from './Home3';
 import Projects from './Projects';
 import Experience from './Experience';
 import About from './About';
@@ -44,7 +45,7 @@ function Home2() {
     const [page , setPage] = useState('Home')
     let content;
     if (page === 'Home') {
-    content = <Home  marginADJ={ML} />;
+    content = <Home3  marginADJ={ML} />;
     } else if (page === 'About') {
     content = <About  marginADJ={ML} />;
     } else if (page === 'Experience') {
@@ -116,7 +117,7 @@ return (
     //   style={{border:'white 3px solid'}}
       ></div>
   
-      <div class="fixed inset-0 flex" 
+      <div class={`${ML ? 'fixed' : ML }  inset-0 flex`} 
     //   style={{border:'purple 13px solid'}}
       >
         {/* <!--
@@ -289,7 +290,7 @@ return (
                     {/* <!-- Current: "bg-gray-800 text-white", Default: "text-gray-400 hover:text-white hover:bg-gray-800" --> */}
                     <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">ORP</span>
-                        <span class="truncate">Off the Record Picks</span>
+                        <span class="truncate">Picks 4 Points</span>
                     </a>
                     </li>
                     <li onClick={() => {

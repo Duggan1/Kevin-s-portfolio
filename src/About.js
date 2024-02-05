@@ -22,7 +22,8 @@ I started my journey afresh, this time with Python as my chosen language. I delv
 To ensure I was on the right track, I sought advice from experienced programmers who emphasized the importance of structure and a clear learning path. With their guidance, I signed up to Codecademy, where I further developed my Python skills and expanded my knowledge of JavaScript, HTML, and CSS. Codecademy provided a solid foundation, but I craved a more immersive learning experience that would allow me to apply my skills in practical projects.
 
 </p>
-<img className="codinggif" src="https://media.licdn.com/dms/image/D5616AQG9Ig_oCeIBlg/profile-displaybackgroundimage-shrink_350_1400/0/1685647981093?e=1703721600&v=beta&t=zyATnVmcc0u1LLY7-CZMbHaflQhBofTteYB_vZIto4k" alt="Animated GIF"></img>
+<img className="codinggif" src="https://cdn1.vogel.de/BNueWF9WfxZoOJIfpXvTMKXU868=/fit-in/800x0/p7i.vogel.de/wcms/9d/e0/9de0c6f0fcd9f328c533d415a3c4488e/0113286401.jpeg"
+ alt="Animated GIF"></img>
 
 <p className="exsectP ">That's when I discovered Flat Iron School. Following the recommendation of a friend who shared my passion for both coding and martial arts, I made the bold decision to quit my job and join the bootcamp. Through intensive training and hands-on projects, I gained invaluable experience and learned to tackle real-world challenges head-on.
 
