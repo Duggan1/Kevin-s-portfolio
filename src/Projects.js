@@ -311,7 +311,7 @@ function Projects({projectON, marginADJ }) {
       
       <div className="juan2 bg-gray-700 ">
       <h2 style={{ fontWeight: 'bolder',textShadow: '0 0 15px black',color:'black',backgroundColor:'white', padding:'5%',margin:'5%', borderRadius:'35%'}} className=""><span style={{ }}>COMPUTER SOFTWARE ENGINEER  TECHNICAL SKILLS</span></h2>
-      <h2 className="exsect3 "  style={{ fontWeight: 'bolder',textShadow: '0 0 15px black',color:'white'}}></h2>
+      {/* <h2 className="exsect3 "  style={{ fontWeight: 'bolder',textShadow: '0 0 15px black',color:'white'}}></h2> */}
 
       
       <p className="exsectSK" style={{ fontWeight: '',textAlign:'center', padding:'1%' }}>Flask, Python, SQLalchemy, PostgreSQL,

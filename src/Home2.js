@@ -554,7 +554,7 @@ return (
       </a>
     </div>
    */}
-    <main class="py-10 lg:pl-72" 
+    <main class="py-10 lg:pl-72 " 
     // style={{border:'white 3px solid'}}
     >
     {content}

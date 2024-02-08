@@ -9,7 +9,7 @@ function About2({marginADJ}) {
           <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
             <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
               <div className={`${!marginADJ ?  marginADJ : ' '} aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto` } >
-                <img
+                <img style={{minHeight:'300px'}}
                   className={`${marginADJ ? '': ' '} inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl ye`}
                   
                 />

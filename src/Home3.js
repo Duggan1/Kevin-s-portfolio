@@ -31,12 +31,12 @@ console.log(marginADJ)
         <div
           className={`  inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg]
            bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96 ${marginADJ ? 'absolute': ' '} `}
-          aria-hidden="true"
-        />
-        <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+          aria-hidden="true" />
+        
+        <div style={{marginTop:'-50px'}} className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-            <div className='flex-start'>
-          <p class="h-8 w-8 rounded-full bg-gray-800 kevio2"  style={{paddingTop:'40px',paddingRight:'40px',marginTop:'-15%'}}
+            <div   className='flex-start'>
+          <p class="h-24 w-24 rounded-full bg-gray-800 kevio2"  style={{paddingTop:'40px',paddingRight:'40px',marginTop:'-15%'}}
                                     >
                                 </p>
                                 <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
