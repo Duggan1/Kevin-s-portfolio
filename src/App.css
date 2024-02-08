@@ -481,6 +481,9 @@ html {
 .zI1 {
   z-index: 0;
 }
+.landstrom{
+  text-decoration: underline;
+}
 
 .zI2 {
   z-index: -2;
@@ -497,9 +500,24 @@ html {
 .zI5 {
   z-index: 5;
 }
-
-
+.font-size-50-36px{
+  font-size: 50px;
+}
+#display-none {
+  display: none;
+  max-width: 1px;
+  max-height: 1px;
+}
+@media (max-width: 640px) {
+.margin70pxleft-at-640{
+  margin-left: 70px;
+}
+}
 @media (max-width: 767px) {
+
+  .margin70pxleft-at-760{
+    margin-left: 70px;
+  }
   .font-size-60px {
     font-size: 60px;
   }
@@ -557,7 +575,12 @@ html {
     /* padding-right: 20%; */
 
   }
-  
+  .font-size-50-36px{
+    font-size: 36px;
+  }
+  .font-size-50-26px{
+    font-size: 26px;
+  }
   .exsect3 {
     /* padding-top: 20px;
     margin-top: -3%; */
