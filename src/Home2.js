@@ -4,9 +4,10 @@ import Home from './Home';
 import Home3 from './Home3';
 import Projects from './Projects';
 import Experience from './Experience';
-import About from './About';
+import About2 from './About2';
 import FooterDash from './FooterDash';
 import Docs from './Docs';
+import EX2 from './EX2';
 
 
 function Home2() {
@@ -47,9 +48,9 @@ function Home2() {
     if (page === 'Home') {
     content = <Home3  marginADJ={ML} />;
     } else if (page === 'About') {
-    content = <About  marginADJ={ML} />;
+    content = <About2  marginADJ={ML} />;
     } else if (page === 'Experience') {
-    content = <Experience marginADJ={ML} />;
+    content = <EX2 marginADJ={ML} />;
     } else if (page === 'Projects') {
     content = <Projects marginADJ={ML} projectON={projectON} />;
     } else if (page === 'Docs') {

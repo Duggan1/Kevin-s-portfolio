@@ -88,12 +88,20 @@ function Docs({ marginADJ }) {
   ];
 
   return (
-    <div className="bg-white">
+    <div className={`bg-gradient-to-b from-indigo-100/20`}>
+      
+      <div
+          className={`  inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg]
+           bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96 ${marginADJ ? 'absolute': ' '} `}
+          aria-hidden="true" />
+
+
+
       {marginADJ || !isMobile ? (
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <h2 className="text-xl font-bold text-gray-900">Kevin's Documents</h2>
+          <h2 className="text-xl font-bold text-gray-900 font-size-55px ">Kevin's Documents</h2>
 
-          <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+          <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 ">
             {documents.map((document, index) => (
               <div key={index}>
                 <div className="relative">
@@ -105,7 +113,7 @@ function Docs({ marginADJ }) {
                       <a href={document.link} target="_blank">Kevin Duggan</a>
                     </div>
                   </div>
-                  <div className="relative mt-4">
+                  <div className="relative mt-4 bg-white" style={{border:"solid black 3px",padding:'1%'}}>
                     <h3 className="text-sm font-medium text-gray-900">
                       {document.title}
                     </h3>
