@@ -138,18 +138,20 @@ function Projects({projectON, marginADJ }) {
       <div  className='margin-0-10'>
          <h1  className='font-size-55px text-align-center font-black color-black'><span style={{ backgroundColor: '', padding:'1%' }}>My Projects</span></h1>
         
-         {/* <button onClick={toggleAll} className={` ${marginADJ}`}  style={{ backgroundColor: "navy", display: 'flex',color: 'white', border: 'white 2px solid', borderRadius: '25%', padding: '1%', marginLeft: 'auto' }}>
+         <button onClick={toggleAll} className={` ${marginADJ}`}  style={{ backgroundColor: "whitesmoke", display: 'flex',color: 'grey', border: 'black 2px solid', borderRadius: '25%', padding: '1%', marginLeft: 'auto' }}>
     {showAll ? (
       <span style={{ color: 'red', borderRadius: '50%', width: '20px', height: '20px', display: 'inline-block', backgroundColor: 'red' }}></span>
     ) : (
       <span style={{ color: 'green', borderRadius: '50%', width: '20px', height: '20px', display: 'inline-block', backgroundColor: 'green' }}></span>
     )}
     &nbsp;{showAll ? 'Hide all' : 'Show all'}
-  </button> */}
-       <div style={{ fontWeight: 'bold', textAlign: 'center', display: 'flex', justifyContent: 'center', marginBottom:'30px' ,
-       flexStart:'center',
-       }}>
- <p style={{ color: 'grey',flexStart:'center',backgroundColor: 'whitesmoke', padding:'1%' }}>Individually Click the Headers to see the projects details or Use the Button to toggle</p></div>
+  </button>
+       {/* <div style={{ fontWeight: 'bold', textAlign: 'center', display: 'flex', justifyContent: 'center' ,
+       flexStart:'start',
+       }}> */}
+ <p style={{ color: 'grey', padding:'1%', marginBottom:'30px' }}><span style={{backgroundColor: 'whitesmoke'}}>
+ Individually Click Projects <span className='fs35 color-black'>&#x2198;</span> or Use the toggle Button<span className='fs35 color-black'>&#x2192;</span></span></p>
+ {/* </div> */}
  
 
 
@@ -213,7 +215,7 @@ function Projects({projectON, marginADJ }) {
         <p style={{ display: 'inline-block',color:'red',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
         <a className="proA" style={{color:'red',cursor: 'pointer',textShadow: '0 0 15px black' }} href="https://www.loom.com/embed/b47df9c98bb14da38dcdccf5f6a833ac">Demo</a>
         <p style={{ display: 'inline-block',color:'red',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'red',textShadow: '0 0 15px black',cursor: 'pointer' }} href="https://chicago-fight-team.onrender.com/">Chicago Fight Team</a>
+        <a className="proA" style={{color:'red',textShadow: '0 0 15px black',cursor: 'pointer' }} href="https://chicagofightteam.org">Chicago Fight Team</a>
         </div>
         </div>
         {showCFT &&  (<>
