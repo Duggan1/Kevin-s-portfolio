@@ -43,7 +43,7 @@ console.log("Small Screen",windowWidth < 1023 );
 console.log(!marginADJ)
 console.log(!marginADJ && windowWidth < 1023 )
   return (
-    <div  id={`${!marginADJ && windowWidth < 1023 ?  'display-none' : ''}`}
+    <div   id={`${!marginADJ && windowWidth < 1023 ?  'display-none' : ''}`}
           className={`${!marginADJ  ?  marginADJ : ''}`}>
       {/* <header className="absolute inset-x-0 top-0 z-50">
         
