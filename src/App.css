@@ -28,10 +28,31 @@ html {
 .r4g {
   background: url('https://round4gym.onrender.com/static/media/logo4W.9f99ef7d208aeb5a49b6.webp');
   background-size: 100% 100%;
+  background-color: white;
   color: white;
   text-align: center;
   /* padding-right: 150px; */
 
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  1% { transform: translateY(0); }
+  25% { transform: translateX(-2px); }
+  35% { transform: translateY(-2px); }
+  50% { transform: translateX(2px); }
+  60% { transform: translateY(2px); }
+  75% { transform: translateX(-2px); }
+  85% { transform: translateY(-2px); }
+  99% { transform: translateX(0); }
+  100% { transform: translateY(0); }
+}
+.shook  {
+  animation: shake 0.7s; /* Run the shake animation */
+  animation-iteration-count: infinite; /* Loop the animation forever */
+}
+.shake:hover  {
+  animation: shake 0.7s; /* Run the shake animation */
+  animation-iteration-count: infinite; /* Loop the animation forever */
 }
 .bg-ws{
   background-color: whitesmoke;

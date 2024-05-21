@@ -131,7 +131,7 @@ return (
             From: "translate-x-0"
             To: "-translate-x-full"
         --> */}
-        {isMobileMenuOpen ? <div class="  left-full top-0 flex w-16 justify-center  navbutton"  style={{}}>
+        {isMobileMenuOpen ? <div class="  left-full top-0 flex w-16 justify-center shook navbutton"  style={{}}>
             <button  onClick={() => {
   toggleMobileMenu();
   toggleML();
@@ -156,7 +156,7 @@ return (
               From: "opacity-100"
               To: "opacity-0"
           --> */}
-          <div class="absolute left-full top-0 flex w-16 justify-center  navbutton"  style={{}}>
+          <div class="absolute left-full top-0 flex w-16 justify-center  navbutton shook"  >
             <button  onClick={toggleMobileMenu} type="button" class="-m-2.5 p-2.5">
               <span class="sr-only">Close sidebar</span>
               <svg class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">

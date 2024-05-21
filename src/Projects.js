@@ -13,6 +13,16 @@ function Projects({projectON, marginADJ }) {
   const [showPAJ, setShowPAJ] = useState(false);
   const [projectONE, setprojectONE] = useState(0);
   const [dataLoaded, setdataLoaded] = useState(false);
+  const [status, setStatus] = useState('shook');
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setStatus('shake');
+    }, 3000);
+
+    // Cleanup the timeout if the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
   console.log(marginADJ)
   useEffect(() => {
     if (projectON) {
@@ -165,7 +175,7 @@ function Projects({projectON, marginADJ }) {
       <div  className='margin-0-10'>
          <h1  className='font-size-55px text-align-center font-black color-black'><span style={{ backgroundColor: '', padding:'1%' }}>My Projects</span></h1>
         
-         <button onClick={toggleAll} className={` ${marginADJ}`}  style={{ backgroundColor: "whitesmoke", display: 'flex',color: 'grey', border: 'black 2px solid', borderRadius: '25%', padding: '1%', marginLeft: 'auto' }}>
+         <button onClick={toggleAll} className={` ${marginADJ} ${status}`}  style={{ backgroundColor: "whitesmoke", display: 'flex',color: 'grey', border: 'black 2px solid', borderRadius: '25%', padding: '1%', marginLeft: 'auto' }}>
     {showAll ? (
       <span style={{ color: 'red', borderRadius: '50%', width: '20px', height: '20px', display: 'inline-block', backgroundColor: 'red' }}></span>
     ) : (
@@ -176,11 +186,16 @@ function Projects({projectON, marginADJ }) {
        {/* <div style={{ fontWeight: 'bold', textAlign: 'center', display: 'flex', justifyContent: 'center' ,
        flexStart:'start',
        }}> */}
- <p style={{ color: 'grey', padding:'1%', marginBottom:'30px' }}><span style={{backgroundColor: 'whitesmoke'}}>
- Individually Click Projects <span className='fs35 color-black'>&#x2198;</span> or Use the toggle Button<span className='fs35 color-black'>&#x2192;</span></span></p>
+<p style={{ color: 'grey', padding: '1%', marginBottom: '30px' }}>
+  <span style={{ backgroundColor: 'whitesmoke' }}>
+    Individually Click Projects <span className='fs35 color-black'>&#x2193;</span> or Use the toggle Button
+    <span className='fs35 color-black'>&#x2197;</span>
+  </span>
+</p>
+
  {/* </div> */}
  
-        <div id='midcft' className={`paj ${marginADJ}`} onClick={togglePAJ} style={{ cursor: 'pointer', marginTop: '0px', zIndex: '0', border: '2px solid white', borderRadius: '8px', marginBottom: '30px' }} >
+        <div id='midcft' className={`paj ${status} ${marginADJ}`} onClick={togglePAJ} style={{ cursor: 'pointer', marginTop: '0px', zIndex: '0', border: '2px solid white', borderRadius: '8px', marginBottom: '30px' }} >
           <h3 className="proT">
             - Play-Along Jeopardy -
           </h3>
@@ -209,7 +224,7 @@ function Projects({projectON, marginADJ }) {
             </ul>
           </div></>)}
 
- <div id='midr4g' className={`r4g ${marginADJ}`} onClick={toggleR4G} style={{ cursor: 'pointer', marginTop: '0px', zIndex: '0', border: '2px solid #01b7f0', borderRadius: '8px', marginBottom: '30px' }} >
+ <div id='midr4g' className={`r4g ${status} ${marginADJ}`} onClick={toggleR4G} style={{ cursor: 'pointer', marginTop: '0px', zIndex: '0', border: '2px solid #01b7f0', borderRadius: '8px', marginBottom: '30px' }} >
           <h3 className="proT">
             - -
           </h3>
@@ -243,7 +258,7 @@ function Projects({projectON, marginADJ }) {
 
 
 
-      <div id='midcft' className={`orp ${marginADJ}`} onClick={toggleORP} style={{cursor:'pointer',marginTop:'0px', zIndex:'0', border:'2px solid white', borderRadius:'8px', marginBottom:'30px' }} >
+      <div id='midcft' className={`orp ${status} ${marginADJ}`} onClick={toggleORP} style={{cursor:'pointer',marginTop:'0px', zIndex:'0', border:'2px solid white', borderRadius:'8px', marginBottom:'30px' }} >
         <h3 className="proT" >
           - Picks 4 Points -
         </h3>
@@ -289,7 +304,7 @@ function Projects({projectON, marginADJ }) {
 
 
 
-      <div id='midcft' className={` cft ${marginADJ}`} onClick={toggleCFT} style={{cursor:'pointer',border:'2px solid white', borderRadius:'8px', marginBottom:'30px'  }} >
+      <div id='midcft' className={`${status} cft ${marginADJ}`} onClick={toggleCFT} style={{cursor:'pointer',border:'2px solid white', borderRadius:'8px', marginBottom:'30px'  }} >
         <h3 className="proT" >
          - Chicago Fight Team -
         </h3>
@@ -325,7 +340,7 @@ function Projects({projectON, marginADJ }) {
       </div></>)}
 
 
-      <div id='midcft' className={`ttt ${marginADJ}`} onClick={toggleTTT} style={{cursor:'pointer',marginLeft: marginADJ ,border:'2px solid white', borderRadius:'8px', marginBottom:'30px' }}>
+      <div id='midcft' className={`${status} ttt ${marginADJ}`} onClick={toggleTTT} style={{cursor:'pointer',marginLeft: marginADJ ,border:'2px solid white', borderRadius:'8px', marginBottom:'30px' }}>
         <h3 className="proT">
           - Trish the Teacher -
         </h3>
@@ -346,15 +361,15 @@ function Projects({projectON, marginADJ }) {
       </div>
       </>)}
 
-      <div  className={`krt ${marginADJ}`} onClick={toggleKRT} style={{cursor:'pointer',border:'2px solid white', borderRadius:'8px', marginBottom:'30px'  }} >
+      <div  className={`krt ${status} ${marginADJ}`} onClick={toggleKRT} style={{cursor:'pointer',border:'2px solid white', borderRadius:'8px', marginBottom:'30px'  }} >
         <h3 className="proT" >
           - KRT -
         </h3>
-        <a className="proA" style={{color:'blue',cursor: 'pointer' }} href="https://github.com/Duggan1/p4-project-krt">Github</a>
+        <a className="proA" style={{color:'BLACK',cursor: 'pointer' }} href="https://github.com/Duggan1/p4-project-krt">Github</a>
         <p style={{ display: 'inline-block', verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'blue',cursor: 'pointer' }} href="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0">Demo</a>
+        <a className="proA" style={{color:'black',cursor: 'pointer' }} href="https://www.loom.com/embed/cfeec326bc324e7bbbbd172634ed53b0">Demo</a>
         <p style={{ display: 'inline-block',  verticalAlign: 'middle', padding: '0 5px 0 5px' }}> | </p>
-        <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://krt-kitchen.onrender.com/">KRT-Kitchen</a>
+        <a className="proA" style={{color:'black',cursor: 'pointer' }}  href="https://krt-kitchen.onrender.com/">KRT-Kitchen</a>
         </div>
         {showKRT &&   (<>
         <div className="textC juan"><center><iframe
@@ -376,8 +391,8 @@ function Projects({projectON, marginADJ }) {
 
 
 
-      <div className={`rbg ${marginADJ}`}   onClick={toggleRBG}style={{cursor:'pointer',border:'2px solid white', borderRadius:'8px' , marginBottom:'100px' }} >
-        <h3 className="proT">
+      <div className={`rbg ${marginADJ} shake`}   onClick={toggleRBG}style={{cursor:'pointer',border:'2px solid white', borderRadius:'8px' , marginBottom:'100px' }} >
+        <h3 className="proT " style={{color:'blue'}}>
           - Recipe Box -
         </h3>
         <a className="proA" style={{color:'blue',cursor: 'pointer' }}  href="https://github.com/Duggan1/phase-2-project-Recipe-Box">Github</a>
