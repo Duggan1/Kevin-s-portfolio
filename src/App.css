@@ -18,6 +18,21 @@ html {
   /* padding-right: 150px; */
 
 }
+.paj {
+  background: navy 50%;
+  color: gold;
+  text-align: center;
+  /* padding-right: 150px; */
+
+}
+.r4g {
+  background: url('https://round4gym.onrender.com/static/media/logo4W.9f99ef7d208aeb5a49b6.webp');
+  background-size: 100% 100%;
+  color: white;
+  text-align: center;
+  /* padding-right: 150px; */
+
+}
 .bg-ws{
   background-color: whitesmoke;
 }
@@ -28,7 +43,7 @@ html {
   border-left: black solid 5px;
 }
 .ttt {
-  background-color: navy;
+  background-color: rgb(21, 137, 33);
   color: white;
   text-align: center;
 }
@@ -425,7 +440,7 @@ html {
   }
 .cft {
   background-color: black;
-  color:red;
+  color:darkred;
   text-align: center;
   
   
