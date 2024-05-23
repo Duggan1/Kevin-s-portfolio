@@ -2,6 +2,12 @@ import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+import cp1 from './cp1.jpeg'
+import cp2  from './cp2.jpeg'
+import cp3 from './cp3.jpeg'
+import cp4 from './cp4.jpeg'
+import cp0 from './kevo.jpeg'
+
 const navigation = [
   { name: 'Product', href: '#' },
   { name: 'Features', href: '#' },
@@ -10,6 +16,48 @@ const navigation = [
 ]
 
 export default function Home3({marginADJ}) {
+
+
+  const images = [
+    cp0, 
+    cp2,
+    cp3,
+    cp1
+    
+  ];
+  const mainImage = cp4; 
+  
+    const [picNow, setPicNow] = useState(images[0]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isMainImage, setIsMainImage] = useState(false);
+  
+    useEffect(() => {
+      if (isMainImage) {
+        const mainImageTimer = setTimeout(() => {
+          // Reset to the first image after displaying the main image
+          setPicNow(images[0]);
+          setCurrentIndex(0);
+          setIsMainImage(false);
+        }, 5000); // Display the main image for 5 seconds
+  
+        return () => clearTimeout(mainImageTimer); // Clear the timeout if the component unmounts
+      } else {
+        const imageTimer = setTimeout(() => {
+          const nextIndex = currentIndex + 1;
+          if (nextIndex < images.length) {
+            setPicNow(images[nextIndex]);
+            setCurrentIndex(nextIndex);
+          } else {
+            setPicNow(mainImage);
+            setIsMainImage(true);
+          }
+        }, 2000); // Change image every 1 second
+  
+        return () => clearTimeout(imageTimer); // Clear the timeout if the component unmounts or updates
+      }
+    }, [currentIndex, isMainImage]);
+
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [showVideo, setShowVideo] = useState(true);
 
@@ -71,7 +119,7 @@ console.log(!marginADJ && windowWidth < 1023 )
               </p>
               <div className={`mt-10 flex items-center gap-x-6  ${marginADJ ? marginADJ : ' '}`}>
                 <a href="#" onClick={toggleVideoVisibility} 
-                className={`text-sm font-semibold leading-6 text-gray-900 bg-ws hover:bg-gray-500   ${marginADJ ? marginADJ : ' '} `}
+                className={` shook shake text-sm font-semibold leading-6 text-gray-900 bg-ws hover:bg-gray-500   ${marginADJ ? marginADJ : ' '} `}
                 
                 style={{border:'gray 2px solid',borderRadius:'5%',padding:'1%',backgroundColor:'white'}}>
                   Allow me to Introduce Myself 
@@ -79,7 +127,7 @@ console.log(!marginADJ && windowWidth < 1023 )
                 <a
                   onClick={handleRClick}
                   href="#"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className=" shake rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Most Recent Work <span aria-hidden="true">→</span>
                 </a>
@@ -90,8 +138,10 @@ console.log(!marginADJ && windowWidth < 1023 )
            {showVideo ?  
             <div
               
-              style={{backgroundSize:'100% 100%'}}
-              className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 kevo"
+              style={{backgroundImage:`url(${picNow})`,backgroundSize:'100%',backgroundRepeat:'no-repeat'}}
+              className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl
+                sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 
+               xl:row-end-2 xl:mt-36 bg-black"
             ></div>
 :
             

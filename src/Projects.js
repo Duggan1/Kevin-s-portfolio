@@ -110,7 +110,8 @@ function Projects({projectON, marginADJ }) {
     setShowCFT(false)
     setShowTTT(false)
     setShowKRT(false)
-    
+    setShowR4G(true);
+    setShowPAJ(false);
     setprojectONE(0)
   }
 

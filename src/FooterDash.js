@@ -20,7 +20,7 @@ function FooterDash({marginADJ}) {
         <div className="icon2 relative" onClick={handleLClick} style={{}} id='linkedin'></div>
         <div className="icon3 relative" onClick={handleGClick}  id='github'></div>
         </div>
-        <h3  style={{ textAlign:'center', fontFamily:'monospace' }}>Oak Lawn, Illinois | 708-280-0622 | kevinduggan95@gmail.com </h3>
+        <h3  style={{ textAlign:'center', fontFamily:'monospace' }}>Chicago, Illinois | 708-280-0622 | kevinduggan95@gmail.com </h3>
         
 
         </div>

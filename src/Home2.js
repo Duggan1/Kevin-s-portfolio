@@ -283,6 +283,30 @@ return (
                 <div class="text-xs font-semibold leading-6 text-gray-400">Kevin's Projects</div>
                 <ul role="list" class="-mx-2 mt-2 space-y-1">
                     <li onClick={() => {
+                            setProjectON(7);
+                            setPage("Projects");
+                            toggleMobileMenu();
+                            toggleML()
+                            }}>
+                    {/* <!-- Current: "bg-gray-800 text-white", Default: "text-gray-400 hover:text-white hover:bg-gray-800" --> */}
+                    <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">JEO</span>
+                        <span class="truncate">Play-Along Jeopardy</span>
+                    </a>
+                    </li>
+                    <li onClick={() => {
+                            setProjectON(6);
+                            setPage("Projects");
+                            toggleMobileMenu();
+                            toggleML()
+                            }}>
+                    {/* <!-- Current: "bg-gray-800 text-white", Default: "text-gray-400 hover:text-white hover:bg-gray-800" --> */}
+                    <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">R4G</span>
+                        <span class="truncate">Round 4 Gym</span>
+                    </a>
+                    </li>
+                    <li onClick={() => {
                             setProjectON(1);
                             setPage("Projects");
                             toggleMobileMenu();
@@ -294,6 +318,7 @@ return (
                         <span class="truncate">Picks 4 Points</span>
                     </a>
                     </li>
+                    
                     <li onClick={() => {
                         setProjectON(2);
                         setPage("Projects");
@@ -418,7 +443,7 @@ return (
                   </a>
                 </li>
                 <li onClick={() => {
-                    setProjectON(6);
+                    setProjectON(9);
                     setPage("Projects");
                     }}>
                 <a href="#" class={`${ page === "Projects" ? 'bg-gray-800' : 'text-gray-400' } hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold`}>
@@ -477,6 +502,26 @@ return (
             <li>
               <div class="text-xs font-semibold leading-6 text-gray-400">Kevin's Projects</div>
               <ul role="list" class="-mx-2 mt-2 space-y-1">
+              <li onClick={() => {
+                    setProjectON(7);
+                    setPage("Projects");
+                    }}>
+                  {/* <!-- Current: "bg-gray-800 text-white", Default: "text-gray-400 hover:text-white hover:bg-gray-800" --> */}
+                  <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">JEO</span>
+                    <span class="truncate">Play-Along Jeopardy</span>
+                  </a>
+                </li>
+                <li onClick={() => {
+                    setProjectON(6);
+                    setPage("Projects");
+                    }}>
+                  {/* <!-- Current: "bg-gray-800 text-white", Default: "text-gray-400 hover:text-white hover:bg-gray-800" --> */}
+                  <a href="#" class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">R4G</span>
+                    <span class="truncate">Round 4 Gym</span>
+                  </a>
+                </li>
               <li onClick={() => {
                     setProjectON(1);
                     setPage("Projects");
