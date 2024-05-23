@@ -27,7 +27,7 @@ export default function Home3({marginADJ}) {
   ];
   const mainImage = cp4; 
   
-    const [picNow, setPicNow] = useState(images[0]);
+    const [picNow, setPicNow] = useState(cp4 );
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isMainImage, setIsMainImage] = useState(false);
   
@@ -38,7 +38,7 @@ export default function Home3({marginADJ}) {
           setPicNow(images[0]);
           setCurrentIndex(0);
           setIsMainImage(false);
-        }, 5000); // Display the main image for 5 seconds
+        }, 8000); // Display the main image for 5 seconds
   
         return () => clearTimeout(mainImageTimer); // Clear the timeout if the component unmounts
       } else {
@@ -51,7 +51,7 @@ export default function Home3({marginADJ}) {
             setPicNow(mainImage);
             setIsMainImage(true);
           }
-        }, 2000); // Change image every 1 second
+        }, 4000); // Change image every 1 second
   
         return () => clearTimeout(imageTimer); // Clear the timeout if the component unmounts or updates
       }
@@ -138,7 +138,9 @@ console.log(!marginADJ && windowWidth < 1023 )
            {showVideo ?  
             <div
               
-              style={{backgroundImage:`url(${picNow})`,backgroundSize:'100%',backgroundRepeat:'no-repeat'}}
+              style={{backgroundImage:`url(${picNow})`,backgroundSize:'100%',backgroundRepeat:'no-repeat'
+              // ,borderRadius:"45%"
+            }}
               className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl
                 sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 
                xl:row-end-2 xl:mt-36 bg-black"
